@@ -47,7 +47,7 @@ def generate():
         tasks.append(Task(
             description=task_data[1].replace("'", "").replace(" ", ""),
             points=points,
-            regions='**FIXME**' if other_regions else region
+            regions='**FIXME**' if (other_regions and other_regions != region) else region
         ))
 
     for task in tasks:
