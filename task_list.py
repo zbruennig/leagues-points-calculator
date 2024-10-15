@@ -1,5 +1,6 @@
 from classes import Task
 
+#  [vztkafwdm][vztkafwdm]['),]
 
 tasks = [
   Task('Open a Reward casket for completing an easy clue scroll.', 10),
