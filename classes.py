@@ -119,7 +119,7 @@ class Task:
         description: str,
         points: int,
         regions: str = '',
-        ca_count: int = 0,
+        ca_tasks: int = 0,
         ca_points: int = 0,
         speed_tasks: int = 0
     ):
@@ -129,7 +129,7 @@ class Task:
         self.points = points
         self.regions = regions.lower()
         self.needed_regions = RegionTree(regions.lower())
-        self.ca_tasks = ca_count or None
+        self.ca_tasks = ca_tasks or None
         self.ca_points = ca_points or None
         self.speed_tasks = speed_tasks or None
 
@@ -147,7 +147,7 @@ class Task:
         # We'll use this to try to automatically populate as many tasks as possible
         return (
             isinstance(other, Task)
-            and self.area == other.area
+            # and self.area == other.area
             and (
                 self.description == other.description
                 or self.name == other.name
@@ -155,5 +155,21 @@ class Task:
         )
 
     def __repr__(self):
-        return f"Task('{self.name}', {chr(39)}{self.area}{chr(39)}, '{self.description}', {self.points}" \
-               f"{f', {chr(39)}{self.regions}{chr(39)}' if self.regions else ''})"
+        base = f"Task('{self.name}', {chr(39)}{self.area}{chr(39)}, '{self.description}', {self.points}" \
+               f"{f', {chr(39)}{self.regions}{chr(39)}' if self.regions else ''}"
+        if self.ca_points:
+            representation = f"{base}, ca_points={self.ca_points})"
+        elif self.ca_tasks:
+            representation = f"{base}, ca_tasks={self.ca_tasks})"
+        elif self.speed_tasks:
+            representation = f"{base}, speed_tasks={self.speed_tasks})"
+        else:
+            representation = f"{base})"
+        return representation
+
+    def to_str(self) -> str:
+        output = f"{self.area.upper() if self.area else 'All'}-{self.points}: {self.name}"
+        if self.regions != self.area:
+            output += f". Requires {self.regions.upper()}."
+
+        return output

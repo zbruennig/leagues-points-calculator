@@ -35,6 +35,10 @@ def compute():
             line = ""
 
 
+    for task in tasks:
+        print(task.to_str())
+
+
 
 
 if __name__ == '__main__':

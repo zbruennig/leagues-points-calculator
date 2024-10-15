@@ -40,7 +40,7 @@ def update_tasks():
         updated_tasks.append(task)
 
     for task in updated_tasks:
-        print(task)
+        print(f"{task},")
 
 
 if __name__ == '__main__':
