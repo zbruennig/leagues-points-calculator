@@ -50,11 +50,10 @@ class RegionTree:
             self.is_or = True
             # can't use split cause might be many ORs
             self.left = RegionTree(expr[0:or_loc].strip())
-            self.right = RegionTree(expr[or_loc+2:].strip())
-            return
-
-        self.is_singleton = True
-        self.regions = expr
+            self.right = RegionTree(expr[or_loc+1:].strip())
+        else:
+            self.is_singleton = True
+            self.regions = expr
 
     def is_satisfied_by(self, regions: Regions):
         if self.is_or:
