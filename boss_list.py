@@ -30,7 +30,7 @@ bosses = [
     Boss("Dagannoth Rex", "f", 5, 15),
     Boss("Dagannoth Supreme", "f", 4, 13),
     Boss("Deranged Archaeologist", "", 4, 7),
-    # Boss("Duke Sucellus", "df", 9, 46, speed_tasks=3),  # DT2
+    # Boss("Duke Sucellus", "f", 9, 46, speed_tasks=3),  # DT2
     # Boss("Fortis Colosseum", "v", 13, 67, speed_tasks=2),  # New
     Boss("General Graardor", "a", 8, 35),
     Boss("Giant Mole", "a", 6, 15),
@@ -41,7 +41,7 @@ bosses = [
     Boss("Kraken", "k", 5, 18),
     Boss("Kree'arra", "a", 7, 32),
     Boss("K'ril Tsutsaroth", "a", 9, 36),
-    # Boss("Leviathan", "d", 9, 46, speed_tasks=3),  # DT2
+    # Boss("Leviathan", "", 9, 46, speed_tasks=3),  # DT2
     Boss("Mimic", "z", 1, 4),
     # Boss("Moons of Peril", "v", 12, 33, speed_tasks=2),  # New
     Boss("Nex", "a", 11, 56),
@@ -66,11 +66,11 @@ bosses = [
     Boss("TzHaar Challenges", "", 11, 55, speed_tasks=3),
     Boss("Inferno", "", 12, 69, speed_tasks=1),
     Boss("Fight Caves", "", 10, 50, speed_tasks=2),
-    # Boss("Vardorvis", "dv", 9, 46, speed_tasks=3),  # DT2
+    # Boss("Vardorvis", "v", 9, 46, speed_tasks=3),  # DT2
     Boss("Venenatis", "w", 2, 7),
     Boss("Vet'ion", "w", 2, 7),
     Boss("Vorkath", "f", 11, 55, speed_tasks=2),
-    # Boss("Whisperer", "da", 9, 45, speed_tasks=3),  # DT2
+    # Boss("Whisperer", "a", 9, 45, speed_tasks=3),  # DT2
     Boss("Wintertodt", "z", 8, 13),
     Boss("Zalcano", "t", 4, 16),
     Boss("Zulrah", "t", 9, 40, speed_tasks=3),
