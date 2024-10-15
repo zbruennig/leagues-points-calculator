@@ -1,7 +1,5 @@
-from typing import List
-
 from boss_list import bosses
-from classes import BossCollection, Regions, Task
+from classes import BossCollection
 from task_list import tasks
 import helper
 
