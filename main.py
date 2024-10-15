@@ -26,8 +26,15 @@ def compute():
 
     point_list = [(r, p) for r, p in combo_max_points.items()]
     point_list = sorted(point_list, key=lambda p: p[1], reverse=True)
-    for item in point_list:
-        print(item[0], item[1])
+
+    width = 6
+    line = ""
+    for idx, item in enumerate(point_list):
+        line = f"{line} {item[0]} {item[1]} |"
+        if idx % width == width - 1:
+            print(line)
+            line = ""
+
 
 
 
