@@ -114,6 +114,8 @@ class BossCollection:
 class Task:
     def __init__(
         self,
+        name: str,
+        area: str,  # Listed region that needs to be unlocked for any points
         description: str,
         points: int,
         regions: str = '',
@@ -121,6 +123,8 @@ class Task:
         ca_points: int = 0,
         speed_tasks: int = 0
     ):
+        self.name = name
+        self.area = area
         self.description = description
         self.points = points
         self.regions = regions.lower()
@@ -138,5 +142,18 @@ class Task:
             return bosses.total_speed_tasks >= self.speed_tasks
         return self.needed_regions.is_satisfied_by(chosen_regions)
 
+    def is_equivalent(self, other):
+        # Equivalent for the purposes of requirements, not points or region locks
+        # We'll use this to try to automatically populate as many tasks as possible
+        return (
+            isinstance(other, Task)
+            and self.area == other.area
+            and (
+                self.description == other.description
+                or self.name == other.name
+            )
+        )
+
     def __repr__(self):
-        return f"Task('{self.description}', {self.points}{f', {chr(39)}{self.regions}{chr(39)}' if self.regions else ''})"
+        return f"Task('{self.name}', {chr(39)}{self.area}{chr(39)}, '{self.description}', {self.points}" \
+               f"{f', {chr(39)}{self.regions}{chr(39)}' if self.regions else ''})"

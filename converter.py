@@ -48,7 +48,9 @@ def generate():
         points = int(task_data[4].strip())
         other_regions = parse_region(task_data[3], base=False)
         tasks.append(Task(
-            description=task_data[1].replace("'", "").replace(" ", ""),
+            name=task_data[1].replace("'", "").replace(" ", ""),
+            area=region,
+            description=task_data[2].replace("'", "").replace(" ", ""),
             points=points,
             regions='**FIXME**' if (other_regions and other_regions != region) else region
         ))

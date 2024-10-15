@@ -1,6 +1,6 @@
 from typing import List
 
-from classes import Regions
+from classes import Regions, Task
 
 
 def get_region_combos() -> List[Regions]:
