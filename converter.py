@@ -5,6 +5,8 @@ from wiki_data import leagues_4
 rows = document.querySelectorAll('table.wikitable.lighttable > tbody > tr')
 rows = Array.from(rows)
 data = rows.map(row => [row.cells[0].childNodes[0].childNodes[0].childNodes[0].currentSrc, row.cells[2].innerText, row.cells[3].innerText, row.cells[4].innerText])
+Wayback Machine:
+data = rows.map(row => [row.cells[0].childNodes[0].currentSrc ?? row.cells[0].childNodes[0].children[0].currentSrc, row.cells[2].innerText, row.cells[3].innerText, row.cells[4].innerText])
 """
 
 def parse_region(text: str, base: bool):

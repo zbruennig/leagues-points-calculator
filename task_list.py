@@ -622,7 +622,7 @@ tasks = [
   Task('Feed a ghast some sweets.', 40, 'm'),
   Task('Complete floor 1 of the Hallowed Sepulchre in Darkmeyer.', 40, 'm'),
   Task('Complete floor 2 of the Hallowed Sepulchre in Darkmeyer.', 40, 'm'),
-  Task('Have the Taxidermist stuff something for you in Canifis.', 40, 'mw OR md OR mf'),
+  Task('Have the Taxidermist stuff something for you in Canifis.', 40, 'm'),
   Task('Loot a Barrows Chest once.', 40, 'm'),
   Task('Open a Black Chest from Shades of Mortton .', 40, 'm'),
   Task('Pet Darkmeyers goodest boy.', 40, 'm'),
@@ -1479,7 +1479,7 @@ tasks = [
   Task('Equip a Crystal Crown.', 400, 't'),
   Task('Complete all of the Combat Achievements for the Gauntlet & Corrupted Gauntlet.', 400, 't'),
   Task('Equip either a Spectral Spirit Shield or an Arcane Spirit Shield.', 400, 'w'),
-  Task('Equip an Amulet of Eternal Glory.', 400, 'w'),
+  Task('Equip an Amulet of Eternal Glory.', 400, 'wf OR wa'),
   Task('Equip anElysian Spirit Shield.', 400, 'w'),
   Task('Obtain Craws Bow, Viggoras Chainmace and Thammarons Sceptre as drops from Revenants.', 400, 'w'),
 ]
