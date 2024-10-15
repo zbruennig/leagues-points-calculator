@@ -10,6 +10,7 @@ def compute():
     combos = helper.get_region_combos()
 
     combo_max_points = {}
+    combo_bosses = {}
     for combo in combos:
         points_available = 0
         available_bosses = BossCollection()
@@ -19,18 +20,18 @@ def compute():
         for task in tasks:
             if task.is_possible_with(combo, available_bosses):
                 points_available += task.points
-        if points_available > 0:
-            combo_max_points[combo] = points_available
+        combo_max_points[combo] = points_available
+        combo_bosses[combo] = available_bosses
 
     # Will assume all the collection log ones are possible with any region choice
 
-    point_list = [(r, p) for r, p in combo_max_points.items()]
-    point_list = sorted(point_list, key=lambda p: p[1], reverse=True)
+    region_list = [(r, p, combo_bosses[r]) for r, p in combo_max_points.items()]
+    region_list = sorted(region_list, key=lambda p: p[1], reverse=True)
 
-    width = 6
+    width = 1
     line = ""
-    for idx, item in enumerate(point_list):
-        line = f"{line} {item[0]} {item[1]} |"
+    for idx, item in enumerate(region_list):
+        line = f"{line} {item[0]} {item[1]} {item[2]} |"
         if idx % width == width - 1:
             print(line)
             line = ""

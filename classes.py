@@ -37,6 +37,7 @@ class Regions:
 
 class RegionTree:
     def __init__(self, expr: str):
+        expr = expr.lower()
         self.is_or = False
         self.is_singleton = True
 
@@ -102,6 +103,13 @@ class BossCollection:
         self.total_points += boss.points
         self.total_speed_tasks += boss.speed_tasks
 
+    def __repr__(self):
+        return str({
+            "ca_tasks": self.total_tasks,
+            "ca_points": self.total_points,
+            "speed": self.total_speed_tasks
+        })
+
 
 class Task:
     def __init__(
@@ -115,8 +123,8 @@ class Task:
     ):
         self.description = description
         self.points = points
-        self.regions = regions
-        self.needed_regions = RegionTree(regions)
+        self.regions = regions.lower()
+        self.needed_regions = RegionTree(regions.lower())
         self.ca_tasks = ca_count or None
         self.ca_points = ca_points or None
         self.speed_tasks = speed_tasks or None
