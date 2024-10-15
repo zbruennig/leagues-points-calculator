@@ -1,3 +1,5 @@
+from collections import defaultdict
+
 from boss_list import bosses
 from classes import BossCollection
 from task_list import tasks
@@ -9,6 +11,8 @@ def compute():
 
     combo_max_points = {}
     combo_bosses = {}
+    combo_tasks = defaultdict(list)
+    uncompletable_tasks = defaultdict(list)
     for combo in combos:
         points_available = 0
         available_bosses = BossCollection()
@@ -18,25 +22,38 @@ def compute():
         for task in tasks:
             if task.is_possible_with(combo, available_bosses):
                 points_available += task.points
+                if task.needs_many_regions():
+                    combo_tasks[combo].append(task)
+            elif task.area in combo.__repr__():
+                uncompletable_tasks[combo].append(task)
+            else:
+                pass
+
         combo_max_points[combo] = points_available
         combo_bosses[combo] = available_bosses
 
     # Will assume all the collection log ones are possible with any region choice
 
-    region_list = [(r, p, combo_bosses[r]) for r, p in combo_max_points.items()]
+    region_list = [(r, p) for r, p in combo_max_points.items()]
     region_list = sorted(region_list, key=lambda p: p[1], reverse=True)
 
-    width = 1
-    line = ""
+
     for idx, item in enumerate(region_list):
-        line = f"{line} {item[0]} {item[1]} {item[2]} |"
-        if idx % width == width - 1:
-            print(line)
-            line = ""
+        region = item[0]
+        points = item[1]
+        output = f"{region.__repr__().upper()} {points} {combo_bosses[region]}"
+        print(output)
 
+        print("\nCombinations:")
+        for task in combo_tasks[region]:
+            print(task.to_str())
 
-    for task in tasks:
-        print(task.to_str())
+        print("\nImpossible Region Tasks:")
+        for task in uncompletable_tasks[region]:
+            print(task.to_str())
+
+        print("\n==================================================\n")
+
 
 
 

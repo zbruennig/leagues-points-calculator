@@ -69,6 +69,12 @@ class RegionTree:
                     del needed_regions[chosen_region]
             return not needed_regions
 
+    @property
+    def complexity(self) -> int:
+        if self.is_or:
+            return max(self.left.complexity, self.right.complexity)
+        else:
+            return len(self.regions.strip())
 
 class Boss:
     def __init__(
@@ -173,3 +179,6 @@ class Task:
             output += f". Requires {self.regions.upper()}."
 
         return output
+
+    def needs_many_regions(self) -> bool:
+        return self.needed_regions.complexity > 1
