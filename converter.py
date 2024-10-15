@@ -1,5 +1,6 @@
 from classes import Task
-from wiki_data import leagues_4
+from wiki_dumps.trailblazer_2020_data import tasks as leagues_2
+from wiki_dumps.wiki_data import leagues_4
 
 """
 rows = document.querySelectorAll('table.wikitable.lighttable > tbody > tr')
@@ -43,6 +44,7 @@ def parse_region(text: str, base: bool):
 
 def generate():
     tasks = []
+    # for task_data in leagues_2:
     for task_data in leagues_4:
         region = parse_region(task_data[0], base=True)
         points = int(task_data[4].strip())
@@ -52,7 +54,7 @@ def generate():
             area=region,
             description=task_data[2].replace("'", "").replace(" ", ""),
             points=points,
-            regions='**FIXME**' if (other_regions and other_regions != region) else region
+            regions='**fixme**' if (other_regions and other_regions != region) else region
         ))
 
     for task in tasks:

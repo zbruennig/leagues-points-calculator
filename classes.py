@@ -155,8 +155,8 @@ class Task:
             isinstance(other, Task)
             # and self.area == other.area
             and (
-                self.description == other.description
-                or self.name == other.name
+                self.description.lower() == other.description.lower()
+                or self.name.lower() == other.name.lower()
             )
         )
 
