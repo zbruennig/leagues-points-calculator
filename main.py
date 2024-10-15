@@ -5,6 +5,7 @@ from classes import BossCollection, Regions, Task
 from task_list import tasks
 import helper
 
+
 def compute():
     combos = helper.get_region_combos()
 
@@ -21,7 +22,7 @@ def compute():
         if points_available > 0:
             combo_max_points[combo] = points_available
 
-    ### TODO need to consider CAs, will assume all the clog ones are possible
+    # Will assume all the collection log ones are possible with any region choice
 
     point_list = [(r, p) for r, p in combo_max_points.items()]
     point_list = sorted(point_list, key=lambda p: p[1], reverse=True)

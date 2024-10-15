@@ -105,13 +105,13 @@ class BossCollection:
 
 class Task:
     def __init__(
-            self,
-            description: str,
-            points: int,
-            regions: str = '',
-            ca_count: int = 0,
-            ca_points: int = 0,
-            speed_tasks: int = 0
+        self,
+        description: str,
+        points: int,
+        regions: str = '',
+        ca_count: int = 0,
+        ca_points: int = 0,
+        speed_tasks: int = 0
     ):
         self.description = description
         self.points = points
