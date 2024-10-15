@@ -72,7 +72,7 @@ bosses = [
     # Other CAs
     Boss("Aberrant Spectre", "m | k", 1, 1),
     # Evil Chicken's Lair is off limits because locked behind Legend's Quest?
-    Boss("Black Dragon", "w | a | fk", 1, 1),
+    Boss("Black Dragon", "w | a | f | t", 1, 1),
     # Can Mutated Bloodveld be killed for this?
     Boss("Bloodveld", "m | k | a | w", 1, 1),
     Boss("Fire Giant", "", 1, 1),
