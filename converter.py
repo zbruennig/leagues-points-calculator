@@ -1,6 +1,6 @@
 from classes import Task
 from wiki_dumps.trailblazer_2020_data import tasks as leagues_2
-from wiki_dumps.wiki_data import leagues_4
+from wiki_dumps.tbr_latest import leagues_4
 
 """
 rows = document.querySelectorAll('table.wikitable.lighttable > tbody > tr')
