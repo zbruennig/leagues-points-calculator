@@ -1,8 +1,9 @@
 from typing import List
-from task_list import tasks
 
+from boss_list import bosses
+from classes import BossCollection, Regions, Task
+from task_list import tasks
 import helper
-from classes import Regions, Task
 
 def compute():
     combos = helper.get_region_combos()
@@ -10,8 +11,12 @@ def compute():
     combo_max_points = {}
     for combo in combos:
         points_available = 0
+        available_bosses = BossCollection()
+        for boss in bosses:
+            if boss.is_possible_with(combo):
+                available_bosses.add(boss)
         for task in tasks:
-            if task.is_possible_with(combo):
+            if task.is_possible_with(combo, available_bosses):
                 points_available += task.points
         if points_available > 0:
             combo_max_points[combo] = points_available

@@ -70,16 +70,66 @@ class RegionTree:
             return not needed_regions
 
 
-class Task:
-    def __init__(self, description: str, points: int, regions: str = ''):
-        self.description = description
-        self.points = points
+class Boss:
+    def __init__(
+        self,
+        name: str,
+        regions: str,
+        tasks: int,
+        points: int,
+        speed_tasks: int = 0
+    ):
+        self.name = name
         self.regions = regions
         self.needed_regions = RegionTree(regions)
+        self.tasks = tasks
+        self.points = points
+        self.speed_tasks = speed_tasks or 0
 
     def is_possible_with(self, chosen_regions: Regions):
         return self.needed_regions.is_satisfied_by(chosen_regions)
 
+
+class BossCollection:
+    def __init__(self):
+        self.bosses = []
+        self.total_tasks = 0
+        self.total_points = 0
+        self.total_speed_tasks = 0
+
+    def add(self, boss: Boss):
+        self.bosses.append(boss)
+        self.total_tasks += boss.tasks
+        self.total_points += boss.points
+        self.total_speed_tasks += boss.speed_tasks
+
+
+class Task:
+    def __init__(
+            self,
+            description: str,
+            points: int,
+            regions: str = '',
+            ca_count: int = 0,
+            ca_points: int = 0,
+            speed_tasks: int = 0
+    ):
+        self.description = description
+        self.points = points
+        self.regions = regions
+        self.needed_regions = RegionTree(regions)
+        self.ca_tasks = ca_count or None
+        self.ca_points = ca_points or None
+        self.speed_tasks = speed_tasks or None
+
+    def is_possible_with(self, chosen_regions: Regions, bosses: BossCollection):
+        if self.ca_tasks:
+            return bosses.total_tasks >= self.ca_tasks
+        elif self.ca_points:
+            return bosses.total_points >= self.ca_points
+        elif self.speed_tasks:
+            return bosses.total_speed_tasks >= self.speed_tasks
+        return self.needed_regions.is_satisfied_by(chosen_regions)
+
     def __repr__(self):
         return f"Task('{self.description}', {self.points}{f', {chr(39)}{self.regions}{chr(39)}' if self.regions else ''})"
-
