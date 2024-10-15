@@ -39,7 +39,7 @@ bosses = [
     Boss("Kraken", "k", 5, 18),
     Boss("Kree'arra", "a", 7, 32),
     Boss("K'ril Tsutsaroth", "a", 9, 36),
-    # Boss("Leviathan", "", 9, 46, speed_tasks=3),  # DT2
+    # Boss("Leviathan", "d", 9, 46, speed_tasks=3),  # DT2
     Boss("Mimic", "z", 1, 4),
     # Boss("Moons of Peril", "v", 12, 33, speed_tasks=2),  # New
     Boss("Nex", "a", 11, 56),
