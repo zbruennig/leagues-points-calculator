@@ -142,7 +142,7 @@ class Task:
             return bosses.total_speed_tasks >= self.speed_tasks
         return self.needed_regions.is_satisfied_by(chosen_regions)
 
-    def is_equivalent(self, other):
+    def is_equivalent_to(self, other):
         # Equivalent for the purposes of requirements, not points or region locks
         # We'll use this to try to automatically populate as many tasks as possible
         return (
