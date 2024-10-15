@@ -23,7 +23,7 @@ bosses = [
     Boss("Dagannoth Prime", "f", 4, 13),
     Boss("Dagannoth Rex", "f", 5, 15),
     Boss("Dagannoth Supreme", "f", 4, 13),
-    Boss("Deranged Archaeologist", 4, 7),
+    Boss("Deranged Archaeologist", "", 4, 7),
     # Boss("Duke Sucellus", "df", 9, 46, speed_tasks=3),  # DT2
     # Boss("Fortis Colosseum", "v", 13, 67, speed_tasks=2),  # New
     Boss("General Graardor", "a", 8, 35),
@@ -34,7 +34,7 @@ bosses = [
     Boss("KBD", "w", 6, 12),
     Boss("Kraken", "k", 5, 18),
     Boss("Kree'arra", "a", 7, 32),
-    Boss("K'ril Tsutsaroth", 9, 36),
+    Boss("K'ril Tsutsaroth", "a", 9, 36),
     # Boss("Leviathan", "d", 9, 46, speed_tasks=3),  # DT2
     Boss("Mimic", "z", 1, 4),
     # Boss("Moons of Peril", "v", 12, 33, speed_tasks=2),  # New
