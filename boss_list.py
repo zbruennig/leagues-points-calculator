@@ -4,8 +4,6 @@ from classes import Boss
 # Applies to ones needing specific lunar/ancient/arceuus spells, items from other regions, etc.
 # Basically, if the boss is available with your regions then its CAs are all doable.
 
-# DT2 bosses require multiple regions (as far as we know), so we need to make sure all are satisfied
-
 # TODO for new league uncomment the bosses that didn't exist for TBL / no CAs
 
 bosses = [
