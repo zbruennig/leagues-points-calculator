@@ -1444,7 +1444,7 @@ tasks = [
   Task('Obtain enough points to unlock the elite tier of Combat Achievements', 400, ca_points=828),
   # TODO currently 341, -7 hard tasks, 33*1 + 41*2 + 63*3 = 304
   Task('Obtain enough points to unlock the hard tier of Combat Achievements', 400, ca_points=304),
-  # TODO currently 937, -26 master tasks, 33*1 + 41*2 + 63*3 + 131*4 + 130*5 = 1478
+  # TODO currently 1717, -26 master tasks, 33*1 + 41*2 + 63*3 + 131*4 + 130*5 = 1478
   Task('Obtain enough points to unlock the master tier of Combat Achievements', 400, ca_points=1478),
   Task('Equip either a Dragon Platebody or a Dragon Kiteshield.', 400, 'fk'),
   Task('Equip full Virtus outfit, obtained from Desert Treasure II bosses.', 400, 'd'),
