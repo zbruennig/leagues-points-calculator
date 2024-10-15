@@ -45,7 +45,7 @@ class RegionTree:
         self.regions = None
 
 
-        or_loc = expr.find('OR')
+        or_loc = expr.find('|')
         if or_loc != -1:
             self.is_or = True
             # can't use split cause might be many ORs

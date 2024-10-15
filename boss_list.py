@@ -70,11 +70,11 @@ bosses = [
     Boss("Zulrah", "t", 9, 40, speed_tasks=3),
 
     # Other CAs
-    Boss("Aberrant Spectre", "m OR k", 1, 1),
+    Boss("Aberrant Spectre", "m | k", 1, 1),
     # Evil Chicken's Lair is off limits because locked behind Legend's Quest?
-    Boss("Black Dragon", "w OR a OR fk", 1, 1),
+    Boss("Black Dragon", "w | a | fk", 1, 1),
     # Can Mutated Bloodveld be killed for this?
-    Boss("Bloodveld", "m OR k OR a OR w OR z", 1, 1),
+    Boss("Bloodveld", "m | k | a | w", 1, 1),
     Boss("Fire Giant", "", 1, 1),
     # Everyone should be able to get Silverlight
     Boss("Greater Demon", "", 2, 2),
@@ -84,7 +84,7 @@ bosses = [
     Boss("Wyrm", "z", 1, 1),
     Boss("Brutal Black Dragon", "z", 1, 2),
     Boss("Gargoyle", "m", 1, 2),
-    Boss("Kurask", "f OR t", 1, 2),
+    Boss("Kurask", "f | t", 1, 2),
     # Unless some relic lets you use thralls w/o Zeah
     Boss("Sit Back and Relax", "z", 1, 2),
     Boss("Skeletal Wyvern", "a", 1, 2),
