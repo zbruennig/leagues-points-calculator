@@ -9,7 +9,7 @@ from classes import Boss
 bosses = [
     Boss("Abyssal Sire", "", 8, 28),
     Boss("Alchemical Hydra", "z", 12, 56, speed_tasks=2),
-    Boss("Amoxliatl", "v", 9, 27, speed_tasks=2),
+    # Boss("Amoxliatl", "v", 9, 27, speed_tasks=2),  # New
     # Boss("Araxxor", "m", 12, 60, speed_tasks=3),  # New
     Boss("Barrows", "m", 7, 14),
     Boss("Bryophyta", "", 7, 9),
