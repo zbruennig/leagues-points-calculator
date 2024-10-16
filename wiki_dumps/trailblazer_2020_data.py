@@ -1,4 +1,4 @@
-tasks = [
+leagues_2 = [
     [
         "Open the Leagues Menu",
         "Open the Leagues Menu found within the Journal Panel.",

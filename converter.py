@@ -1,6 +1,8 @@
 from classes import Task
-from wiki_dumps.trailblazer_2020_data import tasks as leagues_2
+from helper import update_with_known_tasks
+from wiki_dumps.trailblazer_2020_data import leagues_2 as leagues_2
 from wiki_dumps.tbr_latest import leagues_4
+from wiki_dumps.tbr_earliest import leagues_4_initial
 
 """
 rows = document.querySelectorAll('table.wikitable.lighttable > tbody > tr')
@@ -43,9 +45,13 @@ def parse_region(text: str, base: bool):
 
 
 def generate():
+    # UPDATE THESE LINES
+    task_source = leagues_4_initial
+    # Set True if creating a list of possible tasks,
+    # False if creating the actual/final Leagues 5 list
+    only_create_missing_tasks = True
     tasks = []
-    # for task_data in leagues_2:
-    for task_data in leagues_4:
+    for task_data in task_source:
         region = parse_region(task_data[0], base=True)
         points = int(task_data[4].strip())
         other_regions = parse_region(task_data[3], base=False)
@@ -57,8 +63,15 @@ def generate():
             regions='**fixme**' if (other_regions and other_regions != region) else region
         ))
 
-    for task in tasks:
-        print(f'{task},')
+    missing_tasks = update_with_known_tasks(tasks, return_unknown_only=True)
+
+    # used if we want to update the master list with new tasks we learn about, without duplicating
+    if only_create_missing_tasks:
+        for task in missing_tasks:
+            print(f'{task},')
+    else:
+        for task in tasks:
+            print(f'{task},')
 
 
 if __name__ == '__main__':
