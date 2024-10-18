@@ -3,6 +3,7 @@ from collections import defaultdict
 from boss_list import bosses
 from classes import BossCollection
 from task_lists.task_list_tbr import tasks
+from task_lists.master_task_list import all_known_tasks
 import helper
 
 
@@ -10,6 +11,8 @@ def compute():
     print_combinations = False
     print_impossible = True
     print_completable = False
+
+    task_list = all_known_tasks  # TODO Change this
 
     combos = helper.get_region_combos()
 
@@ -24,13 +27,15 @@ def compute():
         for boss in bosses:
             if boss.is_possible_with(combo):
                 available_bosses.add(boss)
-        for task in tasks:
+        for task in task_list:
+            if task.area not in combo.__repr__():
+                continue
             if task.is_possible_with(combo, available_bosses):
                 points_available += task.points
                 completable_tasks[combo].append(task)
                 if task.needs_many_regions():
                     combo_tasks[combo].append(task)
-            elif task.area in combo.__repr__():
+            else:
                 not_completable_tasks[combo].append(task)
 
         combo_max_points[combo] = points_available
