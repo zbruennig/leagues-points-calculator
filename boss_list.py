@@ -4,13 +4,11 @@ from classes import Boss
 # Applies to ones needing specific lunar/ancient/arceuus spells, items from other regions, etc.
 # Basically, if the boss is available with your regions then its CAs are all doable.
 
-# TODO for new league uncomment the bosses that didn't exist for TBL / no CAs
-
 bosses = [
     Boss("Abyssal Sire", "", 8, 28),
     Boss("Alchemical Hydra", "z", 12, 56, speed_tasks=2),
-    # Boss("Amoxliatl", "v", 9, 27, speed_tasks=2),  # New
-    # Boss("Araxxor", "m", 12, 60, speed_tasks=3),  # New
+    Boss("Amoxliatl", "v", 9, 27, speed_tasks=2),  # New
+    Boss("Araxxor", "m", 12, 60, speed_tasks=3),  # New
     Boss("Barrows", "m", 7, 14),
     Boss("Bryophyta", "", 7, 9),
     Boss("Callisto", "w", 2, 7),
@@ -29,21 +27,21 @@ bosses = [
     Boss("Dagannoth Rex", "f", 5, 15),
     Boss("Dagannoth Supreme", "f", 4, 13),
     Boss("Deranged Archaeologist", "", 4, 7),
-    # Boss("Duke Sucellus", "f", 9, 46, speed_tasks=3),  # DT2
-    # Boss("Fortis Colosseum", "v", 13, 67, speed_tasks=2),  # New
+    Boss("Duke Sucellus", "f", 9, 46, speed_tasks=3),  # DT2
+    Boss("Fortis Colosseum", "v", 13, 67, speed_tasks=2),  # New
     Boss("General Graardor", "a", 8, 35),
     Boss("Giant Mole", "a", 6, 15),
     Boss("Grotesque Guardinas", "m", 15, 59, speed_tasks=3),
     Boss("Hespori", "z", 6, 22, speed_tasks=2),
-    # Boss("Hueycoatl", "v", 11, 41, speed_tasks=3),  # New
+    Boss("Hueycoatl", "v", 11, 41, speed_tasks=3),  # New
     Boss("Kalphite Queen", "d", 5, 18),
     Boss("KBD", "w", 6, 12),
     Boss("Kraken", "k", 5, 18),
     Boss("Kree'arra", "a", 7, 32),
     Boss("K'ril Tsutsaroth", "a", 9, 36),
-    # Boss("Leviathan", "d", 9, 46, speed_tasks=3),  # DT2
+    Boss("Leviathan", "d", 9, 46, speed_tasks=3),  # DT2
     Boss("Mimic", "z", 1, 4),
-    # Boss("Moons of Peril", "v", 12, 33, speed_tasks=2),  # New
+    Boss("Moons of Peril", "v", 12, 33, speed_tasks=2),  # New
     Boss("Nex", "a", 11, 56),
     Boss("Nightmare", "m", 14, 67, speed_tasks=6),
     Boss("Phosani's Nightmare", "m", 10, 53, speed_tasks=2),
@@ -51,7 +49,7 @@ bosses = [
     Boss("Phantom Muspah", "f", 13, 61, speed_tasks=3),
     Boss("Sarachnis", "z", 5, 11),
     Boss("Scorpia", "w", 4, 13),
-    # Boss("Scurrius", "", 5, 8),  # New
+    Boss("Scurrius", "", 5, 8),  # New
     Boss("Skotizo", "z", 7, 22),
     Boss("Tempoross", "d", 8, 14),
     Boss("ToB Entry", "m", 12, 48, speed_tasks=1),
@@ -66,11 +64,11 @@ bosses = [
     Boss("TzHaar Challenges", "", 11, 55, speed_tasks=3),
     Boss("Inferno", "", 12, 69, speed_tasks=1),
     Boss("Fight Caves", "", 10, 50, speed_tasks=2),
-    # Boss("Vardorvis", "v", 9, 46, speed_tasks=3),  # DT2
+    Boss("Vardorvis", "v", 9, 46, speed_tasks=3),  # DT2
     Boss("Venenatis", "w", 2, 7),
     Boss("Vet'ion", "w", 2, 7),
     Boss("Vorkath", "f", 11, 55, speed_tasks=2),
-    # Boss("Whisperer", "a", 9, 45, speed_tasks=3),  # DT2
+    Boss("Whisperer", "a", 9, 45, speed_tasks=3),  # DT2
     Boss("Wintertodt", "z", 8, 13),
     Boss("Zalcano", "t", 4, 16),
     Boss("Zulrah", "t", 9, 40, speed_tasks=3),
@@ -100,5 +98,5 @@ bosses = [
     Boss("Galvek", "fk", 1, 4, speed_tasks=1),
     Boss("Glough", "k", 1, 4, speed_tasks=1),
     # Assuming these are all available somehow
-    # Boss("Tormented Demons", "", 5, 21)  # New
+    Boss("Tormented Demons", "", 5, 21)  # New
 ]
