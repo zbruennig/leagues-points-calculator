@@ -49,7 +49,7 @@ def generate():
     task_source = leagues_4_initial
     # Set True if creating a list of possible tasks,
     # False if creating the actual/final Leagues 5 list
-    only_create_missing_tasks = True
+    only_create_missing_tasks = False
     tasks = []
     for task_data in task_source:
         region = parse_region(task_data[0], base=True)

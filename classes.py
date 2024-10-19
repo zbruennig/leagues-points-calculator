@@ -1,3 +1,5 @@
+import re
+
 class Regions:
     def __init__(
         self,
@@ -151,12 +153,17 @@ class Task:
     def is_equivalent_to(self, other):
         # Equivalent for the purposes of requirements, not points or region locks
         # We'll use this to try to automatically populate as many tasks as possible
+
+        this_name = re.sub('\d+', '#', self.name.lower())
+        other_name = re.sub('\d+', '#', other.name.lower())
+        this_desc = re.sub('\d+', '#', self.description.lower())
+        other_desc = re.sub('\d+', '#', other.description.lower())
         return (
             isinstance(other, Task)
             # and self.area == other.area
             and (
-                self.description.lower() == other.description.lower()
-                or self.name.lower() == other.name.lower()
+                this_desc == other_desc
+                or this_name == other_name
             )
         )
 
