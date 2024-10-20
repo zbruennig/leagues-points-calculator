@@ -68,7 +68,8 @@ def compute():
             for task in completable_tasks[region]:
                 print(task.to_str())
 
-        print("\n==================================================\n")
+        if print_completable or print_impossible or print_combinations:
+            print("\n==================================================\n")
 
 
 
