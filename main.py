@@ -9,7 +9,7 @@ import helper
 
 def compute():
     print_combinations = False
-    print_impossible = True
+    print_impossible = False
     print_completable = False
 
     task_list = all_known_tasks  # TODO Change this

@@ -1490,4 +1490,15 @@ all_known_tasks = [
   Task('Create 100 Divine Super Combat Potions', 't', 'Create 100 Divine Super Combat Potions.', 200, 't'),
   Task('Kill a creature in Mount Quidamortem', 'z', 'Enter Mount Quidamortem and kill a creature without wearing boots for protection.', 40, 'z'),
   # Task('Equip the Anglers Outfit', 'z', 'Equip a full set of the Anglers outfit, purchased from Alry on Molch Island.', 80, 'z'),
+
+  # Speculative tasks
+  Task('Cook a Larupia', 'v', 'Cook a Larupia', 10, 'kv'),
+  Task('Cook a Barb-tailed Kebbit', 'v', 'Cook a Barb-tailed Kebbit', 40, 'kv'),
+  Task('Cook a Dashing Kebbit', 'v', 'Cook a Dashing Kebbit', 80, 'kv'),
+  Task('Create a Fur Pouch', 'v', 'Create a Fur Pouch', 40, 'kv'),
+  Task('Create a Small Fur Pouch', 'v', 'Create a Small Fur Pouch', 40, 'kv'),
+  Task('Create a Medium Fur Pouch', 'v', 'Create a Medium Fur Pouch', 40, 'kv'),
+  Task('Create a Large Fur Pouch', 'v', 'Create a Large Fur Pouch', 80, 'fkv'),
+  Task('Equip Echo Boots', 'v', 'Equip Echo Boots', 80, 'amv'),
+  Task('Equip an Amulet of Rancour', 'm', 'Equip an Amulet of Rancour', 200, 'km'),
 ]

@@ -154,10 +154,10 @@ class Task:
         # Equivalent for the purposes of requirements, not points or region locks
         # We'll use this to try to automatically populate as many tasks as possible
 
-        this_name = re.sub('\d+', '#', self.name.lower())
-        other_name = re.sub('\d+', '#', other.name.lower())
-        this_desc = re.sub('\d+', '#', self.description.lower())
-        other_desc = re.sub('\d+', '#', other.description.lower())
+        this_name = self._prepare_for_comparison(self.name.lower())
+        other_name = self._prepare_for_comparison(other.name.lower())
+        this_desc = self._prepare_for_comparison(self.description.lower())
+        other_desc = self._prepare_for_comparison(other.description.lower())
         return (
             isinstance(other, Task)
             # and self.area == other.area
@@ -165,6 +165,16 @@ class Task:
                 this_desc == other_desc
                 or this_name == other_name
             )
+        )
+
+    def _prepare_for_comparison(self, phrase: str):
+        return (
+            re.sub('\d+', '#', phrase)
+            .replace(" a ", " ")
+            .replace(" an ", " ")
+            .replace(" some ", " ")
+            .replace(" the ", " ")
+            .replace("craft", "create")
         )
 
     def __repr__(self):
