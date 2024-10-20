@@ -17,8 +17,7 @@ bosses = [
     Boss("Chaos Fanatic", "w", 4, 10),
     Boss("Crazy Archaeologist", "w", 4, 9),
     Boss("Chambers of Xeric", "z", 29, 138, speed_tasks=6),
-    # Assuming Dust Seeker is not a speed task, need to verify
-    Boss("Chambers CM", "z", 11, 58, speed_tasks=6),
+    Boss("Chambers CM", "z", 11, 58, speed_tasks=7),
     Boss("Corporeal Beast", "w", 5, 21),
     Boss("Commander Zilyana", "a", 7, 31),
     Boss("Crystalline Hunllef", "t", 10, 46, speed_tasks=2),
@@ -54,8 +53,7 @@ bosses = [
     Boss("Tempoross", "d", 8, 14),
     Boss("ToB Entry", "m", 12, 48, speed_tasks=1),
     Boss("Theatre of Blood", "m", 24, 126, speed_tasks=7),
-    # Assuming Hard Mode? Completed It isn't a speed task, need to verify
-    Boss("ToB HM", "m", 14, 83, speed_tasks=3),
+    Boss("ToB HM", "m", 14, 83, speed_tasks=4),
     Boss("Thermy", "k", 3, 12),
     Boss("ToA Entry", "d", 5, 16),
     # Assuming timed individual rooms don't count as speed tasks, need to verify
