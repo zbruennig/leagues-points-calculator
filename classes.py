@@ -175,6 +175,9 @@ class Task:
             .replace(" some ", " ")
             .replace(" the ", " ")
             .replace("craft", "create")
+            .replace(".", "")
+            .replace("'", "")
+            .replace('"', '')
         )
 
     def __repr__(self):

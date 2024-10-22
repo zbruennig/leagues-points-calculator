@@ -46,7 +46,7 @@ def parse_region(text: str, base: bool):
 
 def generate():
     # UPDATE THESE LINES
-    task_source = leagues_4_initial
+    task_source = leagues_4
     # Set True if creating a list of possible tasks,
     # False if creating the actual/final Leagues 5 list
     only_create_missing_tasks = False
@@ -63,15 +63,15 @@ def generate():
             regions='**fixme**' if (other_regions and other_regions != region) else region
         ))
 
-    missing_tasks = update_with_known_tasks(tasks, return_unknown_only=True)
+    missing_tasks, is_new = update_with_known_tasks(tasks, return_unknown_only=only_create_missing_tasks)
 
     # used if we want to update the master list with new tasks we learn about, without duplicating
     if only_create_missing_tasks:
         for task in missing_tasks:
             print(f'{task},')
     else:
-        for task in tasks:
-            print(f'{task},')
+        for task, is_new_status in zip(tasks, is_new):
+            print(f'{task},{"  # New!" if is_new_status else ""}')
 
 
 if __name__ == '__main__':

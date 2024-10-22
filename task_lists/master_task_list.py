@@ -1491,14 +1491,107 @@ all_known_tasks = [
   Task('Kill a creature in Mount Quidamortem', 'z', 'Enter Mount Quidamortem and kill a creature without wearing boots for protection.', 40, 'z'),
   # Task('Equip the Anglers Outfit', 'z', 'Equip a full set of the Anglers outfit, purchased from Alry on Molch Island.', 80, 'z'),
 
-  # Speculative tasks
+  # Speculative combo tasks
   Task('Cook a Larupia', 'v', 'Cook a Larupia', 10, 'kv'),
-  Task('Cook a Barb-tailed Kebbit', 'v', 'Cook a Barb-tailed Kebbit', 40, 'kv'),
-  Task('Cook a Dashing Kebbit', 'v', 'Cook a Dashing Kebbit', 80, 'kv'),
-  Task('Create a Fur Pouch', 'v', 'Create a Fur Pouch', 40, 'kv'),
-  Task('Create a Small Fur Pouch', 'v', 'Create a Small Fur Pouch', 40, 'kv'),
-  Task('Create a Medium Fur Pouch', 'v', 'Create a Medium Fur Pouch', 40, 'kv'),
-  Task('Create a Large Fur Pouch', 'v', 'Create a Large Fur Pouch', 80, 'fkv'),
-  Task('Equip Echo Boots', 'v', 'Equip Echo Boots', 80, 'amv'),
-  Task('Equip an Amulet of Rancour', 'm', 'Equip an Amulet of Rancour', 200, 'km'),
+  Task('Cook a Barb-tailed Kebbit', 'v', 'Cook a Barb-tailed Kebbit.', 40, 'kv'),
+  Task('Cook a Dashing Kebbit', 'v', 'Cook a Dashing Kebbit.', 80, 'kv'),
+  Task('Create a Fur Pouch', 'v', 'Create a Fur Pouch.', 40, 'kv'),
+  Task('Create a Small Fur Pouch', 'v', 'Create a Small Fur Pouch.', 40, 'kv'),
+  Task('Create a Medium Fur Pouch', 'v', 'Create a Medium Fur Pouch.', 40, 'kv'),
+  Task('Create a Large Fur Pouch', 'v', 'Create a Large Fur Pouch.', 80, 'fkv'),
+  Task('Create a perfected quetzal whistle', 'v', 'Create a perfected quetzal whistle.', 200, 'zv'),
+  Task('Equip Echo Boots', 'v', 'Equip Echo Boots.', 80, 'amv'),
+  Task('Equip an Amulet of Rancour', 'm', 'Equip an Amulet of Rancour.', 200, 'km'),
+
+  # Speculative tasks from new content
+  Task('Duke Sucellus Combat Achievements', 'f', 'Complete all of the Combat Achievements for Duke Sucellus.', 200, 'f'),
+  Task('Leviathan Combat Achievements', 'd', 'Complete all of the Combat Achievements for Leviathan.', 200, 'd'),
+  Task('Vardorvis Combat Achievements', 'v', 'Complete all of the Combat Achievements for Vardorvis.', 200, 'v'),
+  Task('Whisperer Combat Achievements', 'a', 'Complete all of the Combat Achievements for Whisperer.', 200, 'a'),
+  Task('Defeat Scurrius', '', 'Defeat Scurrius.', 40),
+  Task('Defeat Scurrius 50 times', '', 'Defeat Scurrius 50 times.', 80, ''),
+  Task('Scurrius Combat Achievements', '', 'Complate all of the Combat Achievements for Scurrius.', 40, ''),
+  Task('Equip a Ratbane Weapon', '', 'Equip a Ratbane Weapon.', 40),
+  Task('Equip a Rat Bone Weapon', '', 'Equip a Rat Bone Weapon.', 40),
+  Task('Complete Defender of Varrock', 'a', 'Complete Defender of Varrock Quest.', 40, 'a'),  # Pending Family Crest?
+  Task('Equip a Zombie Axe', '', 'Equip a Zombie Axe.', 40, 'a'),  # May need regions pending specifics of DoV
+
+  Task('Complete a Hunter Rumour', 'v', 'Complete a Hunter Rumour.', 10, 'v'),
+  Task('Complete 1 Hunter Rumour', 'v', 'Complete 1 Hunter Rumour.', 10, 'v'),
+  Task('Complete 10 Hunter Rumours', 'v', 'Complete 1 Hunter Rumours.', 40, 'v'),
+  Task('Catch an Embertailed jerboa', 'v', 'Catch an Embertailed jerboa.', 40, 'v'),
+  Task('Catch an Embertailed jerboa 100 times', 'v', 'Catch an Embertailed jerboa 100 times.', 40, 'v'),
+  Task('Catch a Pyre Fox', 'v', 'Catch a Pyre Fox.', 40, 'v'),
+  Task('Catch a Pyre Fox 100 times', 'v', 'Catch a Pyre Fox 100 times.', 40, 'v'),
+  Task('Catch a Sunlight Antelope', 'v', 'Catch a Sunlight Antelope.', 80, 'v'),
+  Task('Catch a Sunlight Antelope 100 times', 'v', 'Catch a Sunlight Antelope 100 times.', 80, 'v'),
+  Task('Catch a Sunlight Moth', 'v', 'Catch a Sunlight Moth.', 80, 'v'),
+  Task('Catch a Sunlight Moth 100 times', 'v', 'Catch a Sunlight Moth 100 times.', 80, 'v'),
+  Task('Catch a Moonlight Antelope', 'v', 'Catch a Moonlight Antelope.', 200, 'v'),
+  Task('Catch a Moonlight Antelope 100 times', 'v', 'Catch a Moonlight Antelope 100 times.', 200, 'v'),
+  Task('Catch a Moonlight Moth', 'v', 'Catch a Moonlight Moth.', 200, 'v'),
+  Task('Catch a Moonlight Moth 100 times', 'v', 'Catch a Moonlight Moth 100 times.', 200, 'v'),
+  Task('Equip a Piece of the Guild hunter outfit', 'v', 'Equip a piece of the Guild hunter outfit.', 80, 'v'),
+  Task('Equip Full Guild Hunter Outfit', 'v', 'Equip the full set of Guild Hunter outfit.', 200, 'v'),
+  Task('Create a Basic quetzal whistle', 'v', 'Create a basic quetzal whistle.', 10, 'v'),
+  Task('Create an enhanced quetzal whistle', 'v', 'Create an enhanced quetzal whistle.', 80, 'v'),
+  Task('Build a quetzal landing site', 'v', 'Build a quetzal landing site.', 40, 'v'),
+  Task('Craft 100 Hunters spears', 'v', 'Craft 100 Hunters spears.', 40, 'v'),
+
+  Task('Complete The Ribbiting Tale of a Lily Pad Labour Dispute', 'v', 'Complete The Ribbiting Tale of a Lily Pad Labour Dispute quest.', 10, 'v'),
+  Task('Complete Perilous Moons', 'v', 'Complete Perilous Moons quest.', 40, 'v'),
+  Task('Complete Death on the Isle', 'v', 'Complete Death on the Isle quest.', 40, 'v'),
+  Task('Complete Meat and Greet', 'v', 'Complete Meat and Greet quest.', 40, 'v'),
+  Task('Complete Ethically Acquired Antiquities', 'v', 'Complete Ethically Acquired Antiquities quest.', 10, 'av'),
+
+  Task('Complete the Colosseum', 'v', 'Complete the Colosseum 1 time.', 200, 'v'),
+  Task('Complete the Colosseum 5 times', 'v', 'Complete the Colosseum 5 times.', 400, 'v'),
+  Task('The Colosseum Combat Achievements', 'v', 'Complete all of the Combat Achievements for The Colosseum.', 400, 'v'),
+  Task('Equip a Blessed Dizanas Quiver', 'v', 'Equip a Blessed Dizanas Quiver', 400, 'v'),
+  Task('Equip a piece of the Sunfire fanatic set', 'v', 'Equip a piece of the Sunfire fanatic set', 80, 'v'),
+  Task('Equip the full Sunfire fanatic set', 'v', 'Equip the full Sunfire fanatic set', 200, 'v'),
+  Task('Equip Tonalztics of ralos', 'v', 'Equip Tonalztics of ralos', 200, 'v'),
+  Task('Craft a Sunfire rune', 'v', 'Craft a Sunfire rune.', 40, 'v'),
+  Task('Craft 100 Sunfire runes', 'v', 'Craft 100 Sunfire runes.', 40, 'v'),
+  Task('Create a Searing page', 'v', 'Create a Searing page.', 80, 'zv'),
+  Task('Perform the Fortis Salute emote', 'v', 'Perform the Fortis Salute emote.', 400, 'v'),
+
+  Task('Pickpocket a wealthy citizen', 'v', 'Pickpocket a wealthy citizen', 40, 'v'),
+  Task('Turn in 100 Valuables', 'v', 'Turn in 100 valuables to Oriana.', 40, 'v'),
+  Task('Sell 100 Valuables', 'v', 'Sell 100 valuables to Oriana.', 40, 'v'),
+  Task('Break down 50 bones', 'v', 'Break down 50 bones into bone shards.', 10, 'v'),
+  Task('Sacrifice some Blessed Bone Shards', 'v', 'Sacrifice some Blessed Bone Shards using the libation bowl.', 10, 'v'),
+  Task('Create a jug of blesssed sunfire wine', 'v', 'Create a jug of blesssed sunfire wine', 10, 'v'),
+  Task('Mine some blessed bone shards', 'v', 'Mine some blessed bone shards in Cam Torum.', 40, 'v'),
+  Task('Use a Calcified Moth to teleport to Cam Torum', 'v', 'Use a Calcified Moth to teleport to Cam Torum', 40, 'v'),
+  Task('Defeat a Sulphur Nagua', 'v', 'Defeat a Sulphur Nagua.', 10, 'v'),
+  Task('Equip some Sulphur Blades', 'v', 'Equip a pair of Sulphur Blades.', 40, 'v'),
+  Task('Turn in Sulphurous essence', 'v', 'Turn in some Sulphurous essence to Eyalalli.', 10, 'v'),
+  Task('Defeat a Moonlight Cockatrice', 'v', 'Defeat a Moonlight Cockatrice', 10, 'v'),
+  Task('Defeat a Wyrmling', 'v', 'Defeat a Wyrmling', 10, 'v'),
+
+  Task('Loot the Lunar Chest', 'v', 'Loot the Lunar Chest once.', 40, 'v'),
+  Task('Loot 50 Lunar Chests', 'v', 'Loot the Lunar Chest 50 times.', 200, 'v'),
+  Task('Equip Full Blood Moon Armour Set', 'v', 'Equip a full set of Blood Moon armour.', 80, 'v'),
+  Task('Equip Full Blue Moon Armour Set', 'v', 'Equip a full set of Blue Moon armour.', 80, 'v'),
+  Task('Equip Full Eclipse Moon Armour Set', 'v', 'Equip a full set of Eclipse Moon armour.', 80, 'v'),
+  Task('Equip a piece of Blood Moon armour', 'v', 'Equip a piece of the Blood Moon armour set', 40, 'v'),
+  Task('Equip a piece of Blue Moon armour', 'v', 'Equip a piece of the Blue Moon armour set', 40, 'v'),
+  Task('Equip a piece of Eclipse Moon armour', 'v', 'Equip a piece of the Eclipse Moon armour set', 40, 'v'),
+  Task('Moons of Peril Combat Achievements', 'v', 'Complete all of the Combat Achievements for the Moons of Peril.', 200, 'v'),
+
+  Task('Activate a Teleport anchoring scroll', 'w', 'Activate a Teleport anchoring scroll.', 80, 'w'),
+  Task('Defeat a Tormented Demon', '', 'Defeat a Tormented Demon.', 80, ''),  # Pending region requirement clarification
+  Task('Defeat 100 Tormented Demons', '', 'Defeat 100 Tormented Demons.', 80, ''),  # Pending region requirement clarification
+  Task('Equip Emberlight', '', 'Equip Emberlight.', 80, 'dz'),  # Pending region requirement
+  Task('Equip Purging Staff', '', 'Equip a Purging Staff.', 80, ''),  # Pending region requirement
+  Task('Equip Scorching Bow', '', 'Equip a Scorching Bow.', 80, ''),  # Pending region requirement
+  Task('Equip Burning Claws', '', 'Equip a pair of Burning Claws.', 80, ''),  # Pending region requirement
+  Task('Defeat Araxxor 50 Times', 'm', 'Defeat Araxxor 50 times.', 80, 'm'),
+  Task('Defeat Araxxor', 'm', 'Defeat Araxxor.', 80, 'm'),
+  Task('Make an Extended anti-venom+', 'm', 'Make an Extended anti-venom+.', 200, 'mt'),  # technically could skip t with a clue reward
+  Task('Equip a Noxious halbred', 'm', 'Equip a Noxious Halbred.', 200, 'm'),
+  Task('Araxxor Combat Achievements', 'm', 'Complete all of the Combat Achievements for Araxxor.', 200, 'm'),
+
+  # TODO Varlamore part 2
 ]

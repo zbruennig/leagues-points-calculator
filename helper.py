@@ -24,9 +24,11 @@ def get_region_combos() -> List[Regions]:
                 }))
     return combinations
 
-def update_with_known_tasks(task_list: List[Task], return_unknown_only: bool = False) -> List[Task]:
+
+def update_with_known_tasks(task_list: List[Task], return_unknown_only: bool = False) -> (List[Task], List[bool]):
     remaining_existing_tasks = deepcopy(all_known_tasks)
     updated_tasks = []
+    is_new = []
     for task in task_list:
         matches = False
         for idx, e in enumerate(remaining_existing_tasks):
@@ -45,6 +47,7 @@ def update_with_known_tasks(task_list: List[Task], return_unknown_only: bool = F
             continue
 
         updated_tasks.append(task)
+        is_new.append(not matches)
 
-    return updated_tasks
+    return updated_tasks, is_new
 
