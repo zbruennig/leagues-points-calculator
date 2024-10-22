@@ -1502,6 +1502,9 @@ all_known_tasks = [
   Task('Create a perfected quetzal whistle', 'v', 'Create a perfected quetzal whistle.', 200, 'zv'),
   Task('Equip Echo Boots', 'v', 'Equip Echo Boots.', 80, 'amv'),
   Task('Equip an Amulet of Rancour', 'm', 'Equip an Amulet of Rancour.', 200, 'km'),
+  Task('Make an Extended anti-venom+', 'm', 'Make an Extended anti-venom+.', 200, 'mt'),
+  Task('Complete Ethically Acquired Antiquities', 'v', 'Complete Ethically Acquired Antiquities quest.', 10, 'av'),
+  Task('Create a Searing page', 'v', 'Create a Searing page.', 80, 'zv'),
 
   # Speculative tasks from new content
   Task('Duke Sucellus Combat Achievements', 'f', 'Complete all of the Combat Achievements for Duke Sucellus.', 200, 'f'),
@@ -1542,7 +1545,6 @@ all_known_tasks = [
   Task('Complete Perilous Moons', 'v', 'Complete Perilous Moons quest.', 40, 'v'),
   Task('Complete Death on the Isle', 'v', 'Complete Death on the Isle quest.', 40, 'v'),
   Task('Complete Meat and Greet', 'v', 'Complete Meat and Greet quest.', 40, 'v'),
-  Task('Complete Ethically Acquired Antiquities', 'v', 'Complete Ethically Acquired Antiquities quest.', 10, 'av'),
 
   Task('Complete the Colosseum', 'v', 'Complete the Colosseum 1 time.', 200, 'v'),
   Task('Complete the Colosseum 5 times', 'v', 'Complete the Colosseum 5 times.', 400, 'v'),
@@ -1553,7 +1555,6 @@ all_known_tasks = [
   Task('Equip Tonalztics of ralos', 'v', 'Equip Tonalztics of ralos', 200, 'v'),
   Task('Craft a Sunfire rune', 'v', 'Craft a Sunfire rune.', 40, 'v'),
   Task('Craft 100 Sunfire runes', 'v', 'Craft 100 Sunfire runes.', 40, 'v'),
-  Task('Create a Searing page', 'v', 'Create a Searing page.', 80, 'zv'),
   Task('Perform the Fortis Salute emote', 'v', 'Perform the Fortis Salute emote.', 400, 'v'),
 
   Task('Pickpocket a wealthy citizen', 'v', 'Pickpocket a wealthy citizen', 40, 'v'),
@@ -1588,8 +1589,7 @@ all_known_tasks = [
   Task('Equip Scorching Bow', '', 'Equip a Scorching Bow.', 80, ''),  # Pending region requirement
   Task('Equip Burning Claws', '', 'Equip a pair of Burning Claws.', 80, ''),  # Pending region requirement
   Task('Defeat Araxxor 50 Times', 'm', 'Defeat Araxxor 50 times.', 80, 'm'),
-  Task('Defeat Araxxor', 'm', 'Defeat Araxxor.', 80, 'm'),
-  Task('Make an Extended anti-venom+', 'm', 'Make an Extended anti-venom+.', 200, 'mt'),  # technically could skip t with a clue reward
+  Task('Defeat Araxxor', 'm', 'Defeat Araxxor.', 80, 'm'),  # technically could skip t with a clue reward
   Task('Equip a Noxious halbred', 'm', 'Equip a Noxious Halbred.', 200, 'm'),
   Task('Araxxor Combat Achievements', 'm', 'Complete all of the Combat Achievements for Araxxor.', 200, 'm'),
 
