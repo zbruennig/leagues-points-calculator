@@ -1505,6 +1505,8 @@ all_known_tasks = [
   Task('Make an Extended anti-venom+', 'm', 'Make an Extended anti-venom+.', 200, 'mt'),
   Task('Complete Ethically Acquired Antiquities', 'v', 'Complete Ethically Acquired Antiquities quest.', 10, 'av'),
   Task('Create a Searing page', 'v', 'Create a Searing page.', 80, 'zv'),
+  Task('Speak to Chosen Aluinus with a Mask of Ranul equipped', 'v', 'Speak to Chosen Aluinus with a Mask of Ranul equipped', 200, 'zv'),  # Idk how Jagex will word this
+  Task('Equip Every Elemental Tome', 'v', 'Equip a Tome of Fire, a Tome of Water and a Tome of Earth.', 400, 'vzd'),
 
   # Speculative tasks from new content
   Task('Duke Sucellus Combat Achievements', 'f', 'Complete all of the Combat Achievements for Duke Sucellus.', 200, 'f'),
@@ -1521,7 +1523,7 @@ all_known_tasks = [
 
   Task('Complete a Hunter Rumour', 'v', 'Complete a Hunter Rumour.', 10, 'v'),
   Task('Complete 1 Hunter Rumour', 'v', 'Complete 1 Hunter Rumour.', 10, 'v'),
-  Task('Complete 10 Hunter Rumours', 'v', 'Complete 1 Hunter Rumours.', 40, 'v'),
+  Task('Complete 10 Hunter Rumours', 'v', 'Complete 10 Hunter Rumours.', 40, 'v'),
   Task('Catch an Embertailed jerboa', 'v', 'Catch an Embertailed jerboa.', 40, 'v'),
   Task('Catch an Embertailed jerboa 100 times', 'v', 'Catch an Embertailed jerboa 100 times.', 40, 'v'),
   Task('Catch a Pyre Fox', 'v', 'Catch a Pyre Fox.', 40, 'v'),
@@ -1593,5 +1595,43 @@ all_known_tasks = [
   Task('Equip a Noxious halbred', 'm', 'Equip a Noxious Halbred.', 200, 'm'),
   Task('Araxxor Combat Achievements', 'm', 'Complete all of the Combat Achievements for Araxxor.', 200, 'm'),
 
-  # TODO Varlamore part 2
+  Task('Complete the Colossal Wyrm Basic Agility Course', 'v', 'Complete a lap of the Colossal Wyrm Basic Rooftop Agility Course.', 10, 'v'),
+  Task('Complete the Colossal Wyrm Advanced Agility Course', 'v', 'Complete a lap of the Colossal Wyrm Advanced Rooftop Agility Course.', 10, 'v'),
+  Task('Complete the Colossal Wyrm Agility Course', 'v', 'Complete a lap of the Colossal Wyrm Agility Course.', 10, 'v'),
+  Task('Complete 10 Laps of the Colossal Wyrm Basic Agility Course', 'v', 'Complete 10 laps of the Colossal Wyrm Basic Agility Course.', 40, 'v'),
+  Task('Complete 10 Laps of the Colossal Wyrm Advanced Agility Course', 'v', 'Complete 10 laps of the Colossal Wyrm Advanced Agility Course.', 40, 'v'),
+  Task('Complete 10 Laps of the Colossal Wyrm Agility Course', 'v', 'Complete 10 laps of the Colossal Wyrm Agility Course.', 40, 'v'),
+  Task('Purchase a Colossal wyrm teleport scroll', 'v', 'Purchase a Colossal wyrm teleport scroll.', 40, 'v'),
+  Task('Purchase a Calcified Acorn', 'v', 'Purchase a Calcified Acorn.', 80, 'v'),
+
+  Task('Equip Prescription goggles', 'v', 'Equip Prescription goggles.', 80, 'v'),
+  Task('Equip Alchemist labcoat', 'v', 'Equip Alchemist labcoat.', 40, 'v'),
+  Task('Equip Alchemist pants', 'v', 'Equip Alchemist pants.', 40, 'v'),
+  Task('Equip Alchemist gloves', 'v', 'Equip Alchemist gloves.', 40, 'v'),
+  Task('Purchase potion storage', 'v', 'Purchase potion storage.', 200, 'v'),
+  Task('Purchase a reagent pouch', 'v', 'Purchase a reagent pouch.', 200, 'v'),
+  Task('Purchase a chugging barrel', 'v', 'Purchase a chugging barrel.', 200, 'v'),
+  Task('Equip alchemists amulet', 'v', 'Equip alchemists amulet.', 200, 'v'),
+  Task('Create a Goading potion', 'v', 'Create a goading potion.', 40, 'v'),
+  Task('Create a Prayer regeneration potion', 'v', 'Create a prayer regeneration potion.', 40, 'v'),
+  Task('Create 10 Goading potions', 'v', 'Create 10 goading potions.', 80, 'v'),
+  Task('Create 10 Prayer regeneration potions', 'v', 'Create 10 prayer regeneration potions.', 80, 'v'),
+
+  Task('Defeat a Frost Nagua', 'v', 'Defeat a Frost Nagua.', 10, 'v'),
+  Task('Equip Glacial temotli', 'v', 'Equip Glacial temotli.', 40, 'v'),
+  Task('Open the Moon Chest', 'v', 'Open the Moon in the Ruins of Tapoyauik.', 40, 'v'),
+  Task('Equip the Helmet of the Moon', 'v', 'Equip the Helmet of the Moon.', 400, 'v'),
+  Task('Plant a Huasca seed', 'v', 'Plant a Huasca seed', 80, 'v'),
+
+  Task('Defeat Amoxliatl 50 times', 'v', 'Defeat Amoxliatl 50 times.', 80, 'v'),
+  Task('Defeat Amoxliatl', 'v', 'Defeat Amoxliatl.', 40, 'v'),
+  Task('Equip Pendant of ates', 'v', 'Obtain and equip Pendant of ates.', 40, 'v'),
+  Task('Amoxliatl Combat Achievements', 'v', 'Complete all of the Combat Achievements for Amoxliatl.', 80, 'v'),
+
+  Task('Equip the Tome of Earth', 'v', 'Obtain and Equip the Tome of Earth from The Hueycoatl.', 80, 'v'),
+  Task('Defeat The Hueycoatl 50 times', 'v', 'Defeat The Hueycoatl 50 times.', 80, 'v'),
+  Task('Defeat The Hueycoatl', 'v', 'Defeat The Hueycoatl.', 40, 'v'),
+  Task('Equip a Dragon hunter wand', 'v', 'Equip a Dragon hunter wand.', 200, 'v'),
+  Task('Equip a piece of Hueycoatl hide armour', 'v', 'Equip a a piece of Hueycoatl hide armou.', 800, 'v'),
+  Task('Equip full Hueycoatl hide armour', 'v', 'Equip full Hueycoatl hide armour.', 200, 'v'),
 ]
