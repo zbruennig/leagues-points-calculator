@@ -1632,6 +1632,6 @@ all_known_tasks = [
   Task('Defeat The Hueycoatl 50 times', 'v', 'Defeat The Hueycoatl 50 times.', 80, 'v'),
   Task('Defeat The Hueycoatl', 'v', 'Defeat The Hueycoatl.', 40, 'v'),
   Task('Equip a Dragon hunter wand', 'v', 'Equip a Dragon hunter wand.', 200, 'v'),
-  Task('Equip a piece of Hueycoatl hide armour', 'v', 'Equip a a piece of Hueycoatl hide armou.', 800, 'v'),
+  Task('Equip a piece of Hueycoatl hide armour', 'v', 'Equip a a piece of Hueycoatl hide armour.', 80, 'v'),
   Task('Equip full Hueycoatl hide armour', 'v', 'Equip full Hueycoatl hide armour.', 200, 'v'),
 ]
