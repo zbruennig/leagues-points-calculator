@@ -1618,6 +1618,8 @@ all_known_tasks = [
   Task('Create 10 Prayer regeneration potions', 'v', 'Create 10 prayer regeneration potions.', 80, 'v'),
 
   Task('Defeat a Frost Nagua', 'v', 'Defeat a Frost Nagua.', 10, 'v'),
+  Task('Defeat an Ice spider', 'v', 'Defeat an Ice spider.', 10, 'v'),
+  Task('Defeat a Chilled jelly', 'v', 'Defeat a Chilled jelly.', 10, 'v'),
   Task('Equip Glacial temotli', 'v', 'Equip Glacial temotli.', 40, 'v'),
   Task('Open the Moon Chest', 'v', 'Open the Moon in the Ruins of Tapoyauik.', 40, 'v'),
   Task('Equip the Helmet of the Moon', 'v', 'Equip the Helmet of the Moon.', 400, 'v'),
