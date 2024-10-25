@@ -419,7 +419,7 @@ all_known_tasks = [
   Task('Defeat the Giant Mole', 'a', 'Defeat the Giant Mole beneath Falador.', 40, 'a'),
   Task('Enter the Crafting Guild', 'a', 'Enter the Crafting Guild.', 40, 'a'),
   Task('Enter the Warriors Guild', 'a', 'Enter the Warriors Guild.', 40, 'a'),
-  Task('Equip a Dorgeshuun Crossbow', 'a', 'Equip a Dorgeshuun Crossbow.', 40, 'a'),
+  Task('Equip a Dorgeshuun Crossbow', '', 'Equip a Dorgeshuun Crossbow.', 40, ''),
   Task('Equip Amys Saw', 'a', 'Obtain and Equip Amys Saw from  Mahogany Homes.', 40, 'a'),
   Task('Equip Some Granite Legs', 'a', 'Equip some Granite Legs.', 40, 'a'),
   Task('Harvest Any Herb at the Troll Stronghold', 'a', 'Harvest any herb youve grown at the Troll Stronghold .', 40, 'a'),
