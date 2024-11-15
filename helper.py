@@ -10,7 +10,7 @@ from task_lists.task_list_2020 import tasks as tasks_2020
 def get_region_combos() -> List[Regions]:
     combinations = []
     regions = [
-        # 'v',
+        'v',
         'z', 't', 'k', 'a', 'f', 'w', 'd', 'm']
         # 'z', 'd', 'm']
     length = len(regions)
@@ -34,11 +34,12 @@ def update_with_known_tasks(task_list: List[Task], return_unknown_only: bool = F
         for idx, e in enumerate(remaining_existing_tasks):
             if task.is_equivalent_to(e):
                 matches = True
-                task.regions = e.regions
-                task.needed_regions = e.needed_regions
-                task.ca_tasks = e.ca_tasks
-                task.ca_points = e.ca_points
-                task.speed_tasks = e.speed_tasks
+                if not task.area:
+                    task.regions = e.regions
+                    task.needed_regions = e.needed_regions
+                    task.ca_tasks = e.ca_tasks
+                    task.ca_points = e.ca_points
+                    task.speed_tasks = e.speed_tasks
 
                 del remaining_existing_tasks[idx]
                 break

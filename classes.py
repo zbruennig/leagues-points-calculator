@@ -11,9 +11,12 @@ class Regions:
         f: bool = None,  # fremmy
         d: bool = None,  # desert
         m: bool = None,  # morytania
-        w: bool = None   # wilderness
+        w: bool = None,  # wilderness
+        s: bool = True,  # starter, misthalin and karamja
     ):
         self.map = {}
+        if s:
+            self.map['s'] = True
         if z:
             self.map['z'] = True
         if v:

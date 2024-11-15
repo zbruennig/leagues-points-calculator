@@ -16,9 +16,9 @@ def parse_region(text: str, base: bool):
     if 'Globe' in text:
         return ''
     if 'Misthalin' in text:
-        return ''
+        return 's'
     if 'Karamja' in text:
-        return ''
+        return 's'
     if 'Varlamore' in text:
         return 'v'
     if 'Kourend' in text:
@@ -60,7 +60,7 @@ def generate():
             area=region,
             description=task_data[2].replace("'", "").replace(" ", ""),
             points=points,
-            regions='**fixme**' if (other_regions and other_regions != region) else region
+            regions=region if region or not other_regions else '**fixme**'
         ))
 
     missing_tasks, is_new = update_with_known_tasks(tasks, return_unknown_only=only_create_missing_tasks)
