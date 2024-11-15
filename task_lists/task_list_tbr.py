@@ -1353,7 +1353,7 @@ tasks = [
   Task('Equip an Abyssal Bludgeon', '', 'Equip an Abyssal Bludgeon.', 200),
   Task('Equip an Abyssal Dagger', '', 'Equip an Abyssal Dagger.', 200),
   Task('Equip an Ancient Wyvern Shield', '', 'Equip an Ancient Wyvern Shield.', 200),
-  Task('Equip the Venator Ring', '', 'Obtain and Equip the Venator Ring.', 200, 'df'),
+  Task('Equip the Venator Ring', 'D', 'Obtain and Equip the Venator Ring.', 200, 'df'),
   Task('Mine a Runite Ore Fragment', '', 'Mine a Runite Ore Fragment in the Volcanic Mine on Fossil Island.', 200),
   Task('Receive a Torstol From a Herbiboar', '', 'Receive a Torstol from a Herbiboar on Fossil Island.', 200),
   Task('Attach a Holy ornament kit to the Scythe of Vitur', 'm', 'Attach a Holy ornament kit to the Scythe of Vitur.', 200, 'm'),
