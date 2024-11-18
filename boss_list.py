@@ -30,7 +30,7 @@ bosses = [
     Boss("Fortis Colosseum", "v", 13, 67, speed_tasks=2),  # New
     Boss("General Graardor", "a", 8, 35),
     Boss("Giant Mole", "a", 6, 15),
-    Boss("Grotesque Guardinas", "m", 15, 59, speed_tasks=3),
+    Boss("Grotesque Guardians", "m", 15, 59, speed_tasks=3),
     Boss("Hespori", "z", 6, 22, speed_tasks=2),
     Boss("Hueycoatl", "v", 11, 41, speed_tasks=3),  # New
     Boss("Kalphite Queen", "d", 5, 18),
