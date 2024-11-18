@@ -6,7 +6,7 @@ from classes import Boss
 
 bosses = [
     Boss("Abyssal Sire", "", 8, 28),
-    Boss("Alchemical Hydra", "z", 12, 56, speed_tasks=2),
+    Boss("Alchemical Hydra", "z", 12, 61, speed_tasks=2),
     Boss("Amoxliatl", "v", 9, 27, speed_tasks=2),  # New
     Boss("Araxxor", "m", 12, 60, speed_tasks=3),  # New
     Boss("Barrows", "m", 7, 14),
@@ -78,12 +78,13 @@ bosses = [
     # Can Mutated Bloodveld be killed for this?
     Boss("Bloodveld", "m | k | a | w", 1, 1),
     Boss("Fire Giant", "", 1, 1),
-    # Everyone should be able to get Silverlight
+    # Everyone should be able to get Emberlight
     Boss("Greater Demon", "", 2, 2),
     Boss("Lizardman Shaman", "z", 2, 2),
     Boss("Into the Den of Giants", "z", 1, 1),
     # Do Varlamore wyrmlings count?
     Boss("Wyrm", "z", 1, 1),
+    Boss("Hellhound", "w | z | a | k", 1, 1),
     Boss("Brutal Black Dragon", "z", 1, 2),
     Boss("Gargoyle", "m", 1, 2),
     Boss("Kurask", "f | t", 1, 2),

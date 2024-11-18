@@ -1073,8 +1073,8 @@ all_known_tasks = [
   Task('Blow 100 Light Orbs', '', 'Blow 100 Empty Light Orbs.', 200),
   Task('Build a Spirit tree & fairy ring.', '', 'Build a Spirit tree & fairy ring in your Player Owned House.', 200),
   Task('Catch a Lucky Impling Bare-Handed', '', 'Catch a Lucky Impling bare-handed.', 200),
-  Task('Combat Achievements Easy Tier', '', 'Obtain enough points to unlock the easy tier of Combat Achievements', 200, ca_points=33),
-  Task('Combat Achievements Medium Tier', '', 'Obtain enough points to unlock the medium tier of Combat Achievements', 200, ca_points=115),
+  Task('Combat Achievements Easy Tier', '', 'Obtain enough points to unlock the easy tier of Combat Achievements', 200, ca_points=35),
+  Task('Combat Achievements Medium Tier', '', 'Obtain enough points to unlock the medium tier of Combat Achievements', 200, ca_points=139),
   Task('Complete 10 Speed Tasks', '', 'Complete 10 Combat Achievement Speed tasks.', 200, speed_tasks=10),
   Task('Complete 20 Speed Tasks', '', 'Complete 20 Combat Achievement Speed tasks.', 200, speed_tasks=20),
   Task('Complete 200 Slayer Tasks', '', 'Complete 200 Slayer Tasks.', 200),
@@ -1440,9 +1440,9 @@ all_known_tasks = [
   Task('Make an Extended Antifire Potion', 'w', 'Make an Extended Antifire Potion.', 200, 'w'),
   Task('Mine Some Runite Ore in the Wilderness', 'w', 'Mine some Runite Ore in the Wilderness.', 200, 'w'),
   Task('750 Collection log slots', '', 'Obtain 750 unique Collection Log slots.', 400),
-  Task('Combat Achievements Elite Tier', '', 'Obtain enough points to unlock the elite tier of Combat Achievements', 400, ca_points=828),
-  Task('Combat Achievements Hard Tier', '', 'Obtain enough points to unlock the hard tier of Combat Achievements', 400, ca_points=304),
-  Task('Combat Achievements Master Tier', '', 'Obtain enough points to unlock the master tier of Combat Achievements', 400, ca_points=1478),
+  Task('Combat Achievements Elite Tier', '', 'Obtain enough points to unlock the elite tier of Combat Achievements', 400, ca_points=989),
+  Task('Combat Achievements Hard Tier', '', 'Obtain enough points to unlock the hard tier of Combat Achievements', 400, ca_points=373),
+  Task('Combat Achievements Master Tier', '', 'Obtain enough points to unlock the master tier of Combat Achievements', 400, ca_points=1779),
   Task('Equip a Dragon Platebody or Dragon Kiteshield', '', 'Equip either a Dragon Platebody or a Dragon Kiteshield.', 400, 'fk'),
   Task('Equip full Virtus', '', 'Equip full Virtus outfit, obtained from Desert Treasure II bosses.', 400, 'd | v | a | f'),
   Task('Reach Base Level 95', '', 'Reach level 95 in every skill.', 400),
@@ -1593,7 +1593,7 @@ all_known_tasks = [
   Task('Equip Scorching Bow', '', 'Equip a Scorching Bow.', 80, ''),  # Pending region requirement
   Task('Equip Burning Claws', '', 'Equip a pair of Burning Claws.', 80, ''),  # Pending region requirement
   Task('Defeat Araxxor 50 Times', 'm', 'Defeat Araxxor 50 times.', 80, 'm'),
-  Task('Defeat Araxxor', 'm', 'Defeat Araxxor.', 80, 'm'),  # technically could skip t with a clue reward
+  Task('Defeat Araxxor', 'm', 'Defeat Araxxor.', 80, 'm'),
   Task('Equip a Noxious halbred', 'm', 'Equip a Noxious Halbred.', 200, 'm'),
   Task('Araxxor Combat Achievements', 'm', 'Complete all of the Combat Achievements for Araxxor.', 200, 'm'),
 
