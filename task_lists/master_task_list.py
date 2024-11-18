@@ -302,7 +302,7 @@ all_known_tasks = [
   Task('Catch 100 Lobsters', '', 'Catch 100 Raw Lobsters whilst Fishing.', 40),
   Task('Catch 50 Salmon', '', 'Catch 50 Raw Salmon whilst Fishing.', 40),
   Task('Catch 50 Swordfish', '', 'Catch 50 Raw Swordfish whilst Fishing.', 40),
-  Task('Catch a Swamp Lizard or Salamander', '', 'Catch either a Swamp Lizard or any kind of Salamander.', 40, 'm | d | k | w | V'),
+  Task('Catch a Swamp Lizard or Salamander', '', 'Catch either a Swamp Lizard or any kind of Salamander.', 40, 'm | d | k | w | v'),
   Task('Check a grown Fruit Tree', '', 'Check the health of any Fruit Tree youve grown.', 40),
   Task('Chop 100 Willow Logs', '', 'Chop 100 Willow Logs from Willow Trees.', 40),
   Task('Chop Some Logs With a Rune Axe', '', 'Chop any kind of logs using a Rune Axe.', 40),
