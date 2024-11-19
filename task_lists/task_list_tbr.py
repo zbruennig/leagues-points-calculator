@@ -1097,7 +1097,7 @@ tasks = [
   Task('Fill 40 Medium Clue Collection Log Slots', '', 'Fill 40 slots in the Medium Clue section of the Collection Log.', 200),
   Task('Fill 50 Easy Clue Collection Log Slots', '', 'Fill 50 slots in the Easy Clue section of the Collection Log.', 200),
   Task('Fill Every Beginner Clue Collection Log Slot', '', 'Fill every slot in the Beginner Clue section of the Collection Log.', 200),
-  Task('Fletch 100 Dragon Javelins', '', 'Fletch 100 Dragon Javelins.', 200, 'k | d | w'),
+  Task('Fletch 100 Dragon Javelins', '', 'Fletch 100 Dragon Javelins.', 200, 'k | d | w | f | v | a'),
   Task('Gain 25 Unique Items From Elite Clues', '', 'Gain 25 unique items from Elite Clue Scroll Reward Caskets.', 200),
   Task('Gain 25 Unique Items From Master Clues', '', 'Gain 25 unique items from Master Clue Scroll Reward Caskets.', 200),
   Task('Gain 50 Unique Items From Hard Clues', '', 'Gain 50 unique items from Hard Clue Scroll Reward Caskets.', 200),

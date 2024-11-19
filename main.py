@@ -33,7 +33,7 @@ def compute():
             if task.is_possible_with(combo, available_bosses):
                 points_available += task.points
                 completable_tasks[combo].append(task)
-                if task.needs_many_regions():
+                if task.is_complex:
                     combo_tasks[combo].append(task)
             else:
                 not_completable_tasks[combo].append(task)

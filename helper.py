@@ -24,8 +24,9 @@ def get_region_combos() -> List[Regions]:
                     regions[j]: True,
                     regions[k]: True
                 }))
-    return combinations
+    # return combinations
     # return [Regions(w=True, m=True, f=True)]
+    return [Regions(True, True, True, True, True, True, True, True, True, True)]
 
 
 def update_with_known_tasks(task_list: List[Task], return_unknown_only: bool = False) -> (List[Task], List[bool]):
