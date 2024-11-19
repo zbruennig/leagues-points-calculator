@@ -204,4 +204,4 @@ class Task:
         return output
 
     def needs_many_regions(self) -> bool:
-        return self.needed_regions.complexity > 1
+        return self.needed_regions.complexity > 1 or self.needed_regions.is_or

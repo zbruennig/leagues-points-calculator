@@ -8,7 +8,7 @@ import helper
 
 
 def compute():
-    print_combinations = False
+    print_combinations = True
     print_impossible = False
     print_completable = False
 
@@ -50,8 +50,8 @@ def compute():
     for idx, item in enumerate(region_list):
         region = item[0]
         points = item[1]
-        output = f"{region.__repr__().upper()[1:]} {points} {combo_bosses[region]}"
-        # output = f"{region.__repr__().upper()[1:]} {combo_bosses[region]}"
+        # output = f"{region.__repr__().upper()[1:]} {points} {combo_bosses[region]}"
+        output = f"{region.__repr__().upper()[1:]} {combo_bosses[region]}"
         print(output)
 
         if print_combinations:
