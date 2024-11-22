@@ -13,7 +13,13 @@ def get_region_combos() -> List[Regions]:
         'v',
         'w',
         'm',
-        'z', 't', 'k', 'a', 'f', 'd']
+        'z',
+        't',
+        'k',
+        'a',
+        'f',
+        'd'
+    ]
         # 'z', 'd', 'm']
     length = len(regions)
     for i in range(0, length):
@@ -25,7 +31,8 @@ def get_region_combos() -> List[Regions]:
                     regions[k]: True
                 }))
     # return combinations
-    # return [Regions(w=True, m=True, f=True)]
+    # return [Regions(f=True, z=True, m=True, w=True, k=True)]
+    # return [Regions(f=True, m=True, w=True)]
     return [Regions(True, True, True, True, True, True, True, True, True, True)]
 
 

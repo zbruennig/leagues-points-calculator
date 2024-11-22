@@ -3,6 +3,7 @@ from helper import update_with_known_tasks
 from wiki_dumps.trailblazer_2020_data import leagues_2 as leagues_2
 from wiki_dumps.tbr_latest import leagues_4
 from wiki_dumps.tbr_earliest import leagues_4_initial
+from wiki_dumps.echoes_earliest import echoes_initial
 
 """
 rows = document.querySelectorAll('table.wikitable.lighttable > tbody > tr')
@@ -46,7 +47,7 @@ def parse_region(text: str, base: bool):
 
 def generate():
     # UPDATE THESE LINES
-    task_source = leagues_4
+    task_source = echoes_initial
     # Set True if creating a list of possible tasks,
     # False if creating the actual/final Leagues 5 list
     only_create_missing_tasks = False

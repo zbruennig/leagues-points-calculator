@@ -207,5 +207,5 @@ class Task:
         return self.needed_regions.complexity > 1
 
     @property
-    def is_complex(self) -> bool:
-        return self.needs_many_regions() or self.needed_regions.is_or
+    def is_complicated(self) -> bool:
+        return self.needs_many_regions() or self.needed_regions.is_or or self.area != self.regions
