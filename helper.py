@@ -3,6 +3,7 @@ from typing import List
 
 from classes import Regions, Task
 from task_lists.master_task_list import all_known_tasks
+from task_lists.tbr_starter import starter_tasks
 from task_lists.task_list_tbr import tasks as tasks
 from task_lists.task_list_tbr_raw import tasks as fresh_tasks_tbr
 from task_lists.task_list_2020 import tasks as tasks_2020

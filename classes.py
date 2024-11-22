@@ -209,3 +209,7 @@ class Task:
     @property
     def is_complicated(self) -> bool:
         return self.needs_many_regions() or self.needed_regions.is_or or self.area != self.regions
+
+    @property
+    def is_starter(self) -> bool:
+        return self.points <= 40 and self.area in ['', 's']
