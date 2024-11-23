@@ -423,7 +423,7 @@ all_known_tasks = [
   Task('Equip Amys Saw', 'a', 'Obtain and Equip Amys Saw from  Mahogany Homes.', 40, 'a'),
   Task('Equip Some Granite Legs', 'a', 'Equip some Granite Legs.', 40, 'a'),
   Task('Harvest Any Herb at the Troll Stronghold', 'a', 'Harvest any herb youve grown at the Troll Stronghold .', 40, 'a'),
-  Task('Make 20 Stamina Potions', 'a', 'Make 20 Stamina Potions.', 40, 'a'),
+  Task('Make 20 Stamina Potions', 'a', 'Make 20 Stamina Potions.', 40),
   Task('Make 50 Ancient Brews', 'a', 'Make 50 Ancient Brews.', 40, 'a'),
   Task('Obtain 20 Golden Nuggets', 'a', 'Obtain 20 Golden Nuggets from the Motherlode Mine beneath Falador.', 40, 'a'),
   Task('Obtain the Plank Sack', 'a', 'Obtain the Plank Sack from  Mahogany Homes.', 40, 'a'),
@@ -1521,7 +1521,7 @@ all_known_tasks = [
   Task('Equip a Ratbane Weapon', '', 'Equip a Ratbane Weapon.', 40),
   Task('Equip a Rat Bone Weapon', '', 'Equip a Rat Bone Weapon.', 40),
   Task('Complete Defender of Varrock', 'a', 'Complete Defender of Varrock Quest.', 40, 'a'),  # Pending Family Crest?
-  Task('Equip a Zombie Axe', '', 'Equip a Zombie Axe.', 40, 'a'),  # May need regions pending specifics of DoV
+  Task('Equip a Zombie Axe', '', 'Equip a Zombie Axe.', 40, ''),
 
   Task('Complete a Hunter Rumour', 'v', 'Complete a Hunter Rumour.', 10, 'v'),
   Task('Complete 1 Hunter Rumour', 'v', 'Complete 1 Hunter Rumour.', 10, 'v'),
@@ -1589,9 +1589,9 @@ all_known_tasks = [
   Task('Defeat a Tormented Demon', '', 'Defeat a Tormented Demon.', 80, ''),  # Pending region requirement clarification
   Task('Defeat 100 Tormented Demons', '', 'Defeat 100 Tormented Demons.', 80, ''),  # Pending region requirement clarification
   Task('Equip Emberlight', '', 'Equip Emberlight.', 80, ''),  # Pending region requirement
-  Task('Equip Purging Staff', '', 'Equip a Purging Staff.', 80, ''),  # Pending region requirement
-  Task('Equip Scorching Bow', '', 'Equip a Scorching Bow.', 80, ''),  # Pending region requirement
-  Task('Equip Burning Claws', '', 'Equip a pair of Burning Claws.', 80, ''),  # Pending region requirement
+  Task('Equip Purging Staff', '', 'Equip a Purging Staff.', 80, ''),
+  Task('Equip Scorching Bow', '', 'Equip a Scorching Bow.', 80, ''),
+  Task('Equip Burning Claws', '', 'Equip a pair of Burning Claws.', 80, ''),
   Task('Defeat Araxxor 50 Times', 'm', 'Defeat Araxxor 50 times.', 80, 'm'),
   Task('Defeat Araxxor', 'm', 'Defeat Araxxor.', 80, 'm'),
   Task('Equip a Noxious halbred', 'm', 'Equip a Noxious Halbred.', 200, 'm'),

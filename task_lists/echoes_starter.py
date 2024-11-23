@@ -262,7 +262,7 @@ starter_tasks = [
     Task('Kill three chickens in 6 seconds', '', 'Kill three chickens in 6 seconds', 30),
     Task('Land a hoop on a stick', '', 'Successfully land a hoop on a stick in the PoH minigame', 30),  # New!
     Task('Light a Bullseye Lantern', '', 'Light a Bullseye Lantern', 30),
-    Task('Make 20 Stamina Potions', '', 'Make 20 Stamina Potions', 30, 'a'),
+    Task('Make 20 Stamina Potions', '', 'Make 20 Stamina Potions', 30),
     Task('Make 30 Prayer Potions', '', 'Make 30 Prayer Potions', 30),
     Task('Make a 4 dose potion', '', 'Make any 4 dose potion using an Amulet of Chemistry', 30),
     Task('Make a Pineapple Pizza', '', 'Make a Pineapple Pizza', 30),
