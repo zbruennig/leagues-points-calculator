@@ -31,7 +31,7 @@ all_known_tasks = [
   Task('Complete a Rooftop Agility Course', '', 'Complete a lap of any Rooftop Agility Course.', 10),
   Task('Complete the Leagues Tutorial', '', 'Complete the Leagues Tutorial and begin your adventure.', 10),
   Task('Cook Shrimp', '', 'Cook Raw Shrimp.', 10),
-  Task('Craft a Leather Body', '', 'Craft a Leather Body.', 10, 'a | k | z | d | m | f'),
+  Task('Craft a Leather Body', '', 'Craft a Leather Body.', 10, 'a | k | z | d | m | f | w'),  # With grimoire anyone can tan leather if they have astrals, allowing WVT to get it
   Task('Craft Any Rune', '', 'Use a Runecrafting Altar to craft any type of rune from Essence.', 10),
   Task('Create a Compost Potion', '', 'Create a Compost Potion.', 10),
   Task('Create an Antipoison', '', 'Create an Antipoison.', 10),
@@ -579,7 +579,7 @@ all_known_tasks = [
   Task('Complete Rune Mysteries', '', 'Complete the  Rune Mysteries  quest.', 40),
   Task('Complete the Easy Lumbridge & Draynor Diary', '', 'Complete all of the easy tasks in the  Lumbridge & Draynor Achievement Diary.', 40),
   Task('Complete the Easy Varrock Diary', '', 'Complete all of the easy tasks in the  Varrock Achievement Diary.', 40),
-  Task('Complete the Medium Lumbridge & Draynor Diary', '', 'Complete all of the medium tasks in the  Lumbridge & Draynor Achievement Diary.', 40),
+  Task('Complete the Medium Lumbridge & Draynor Diary', '', 'Complete all of the medium tasks in the  Lumbridge & Draynor Achievement Diary.', 40),  # Grimoire required for VWT, see Leather Body
   Task('Complete the Medium Varrock Diary', '', 'Complete all of the medium tasks in the  Varrock Achievement Diary.', 40),
   Task('Craft 50 Cosmic Runes', '', 'Craft 50 Cosmic Runes from Essence at the Cosmic Altar from Essence.', 40),
   Task('Defeat a Fossil Island Wyvern', '', 'Defeat any type of Wyvern on Fossil Island.', 40),

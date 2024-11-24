@@ -9,8 +9,6 @@ routed_tasks = [
     Task('Achieve Your First Level 10', '', 'Reach level 10 in any skill (not including Agility and Hitpoints)', 10),
     Task('Talk to Hans', 's', 'Talk to Hans and have him tell you how old you are', 10, 's'),  # New!
     Task('Use the Northern Staircase in Lumbridge', 's', 'Use the Northern Staircase in Lumbridge Castle to go upstairs from the bottom floor', 10, 's'),  # To get Anti-Dragon
-    Task('Pickpocket a Citizen', '', 'Pickpocket a Man or a Woman', 10),
-    Task('Open 28 Coin Pouches At Once', '', 'Open 28 Coin Pouches at once', 30),
     Task('Rake a Farming Patch', '', 'Rake any Farming patch', 10),
     Task('Kill a Spider by kicking it', 's', 'Kill a Spider in Lumbridge by kicking it', 10, 's'),  # New!
     # Bank / Prepare Inv
@@ -98,7 +96,11 @@ routed_tasks = [
     Task('Light a Torch', '', 'Light a Torch', 10),
 
     # Lumbridge 2 - RAKE!
+    Task('Pickpocket a Citizen', '', 'Pickpocket a Man or a Woman', 10),
+    Task('Open 28 Coin Pouches At Once', '', 'Open 28 Coin Pouches at once', 30),
     Task('Reach Combat Level 10', '', 'Reach Combat Level 10', 10),
+    # Task('Equip an Iron dagger', 's', 'Equip an Iron dagger', 10, 's'),  # From HAM
+    # Task('Pickpocket a Master Farmer', '', 'Successfully pickpocket from a Master farmer', 30),
     Task('Protect Your Crops', '', 'Pay a farmer to protect any of your crops', 10),  # Buy compost, plant barley and prot
     Task('Burn Some Food', '', 'Burn any kind of food while trying to cook it', 10),
     Task('Use the Range in Lumbridge Castle', 's', 'Use the Range in Lumbridge Castle to cook some food', 30, 's'),
@@ -108,12 +110,15 @@ routed_tasks = [
     Task('Kill a Duck with a fire spell', 's', 'Kill a Duck with a fire spell', 10, 's'),  # New!
     Task('Kill a Frog', 's', 'Kill a Frog', 10, 's'),  # New!
     Task('Buy a candle in Lumbridge', '', 'Buy a candle in Lumbridge', 30),  # New!
+    Task('Pickpocket a H.A.M. Member', 's', 'Pickpocket any H.A.M. member at their hideout', 30, 's'),  # Iron Dagger, Steel Pickaxe, Steel Axe
+    Task('Equip an Iron dagger', 's', 'Equip an Iron dagger', 10, 's'),  # From HAM
     Task('Chop a log from a potato tree', 's', 'Chop a log from a tree that is curiously in a potato field', 10, 's'),
 
     # Draynor - Start Vampire slayer, buy Chronicle and some wines, get seeds, barley esp. Do req fishing before Musa Point
     # Enough agility for Varrock if 8x
     Task('Insult Aggie the Witch', 's', 'Insult Aggie the Witch in Draynor Village', 10, 's'),
     Task('Have Ned make you some rope', 's', 'Have Ned make you some rope using a ball of wool in Draynor Village', 10, 's'),
+    Task('Pickpocket a Master Farmer', '', 'Successfully pickpocket from a Master farmer', 30),
     Task('Complete the Draynor Agility Course', 's', 'Complete a lap of the Draynor Rooftop Agility Course', 10, 's'),
     Task('Complete 10 Laps of the Draynor Agility Course', 's', 'Complete 10 laps of the Draynor Rooftop Agility Course', 30, 's'),
     Task('Obtain a Mark of Grace', '', 'Obtain a Mark of Grace from any Rooftop Agility Course', 30),
@@ -150,6 +155,9 @@ routed_tasks = [
     Task('Enter the Cooks Guild', 's', 'Enter the Cooks Guild west of Varrock', 30, 's'),
     Task('Smith a Bronze full helm', '', 'Use an Anvil to smith a Bronze full helm', 10),
     Task('Smith a Bronze plateskirt', '', 'Use an Anvil to smith a Bronze plateskirt', 10),
+    Task('Pickpocket a Varrock Guard', 's', 'Pickpocket any Varrock Guard', 30, 's'),  # New!
+    Task('Obtain 800 Coins From Coin Pouches At Once', '', 'Open a stack of Coin Pouches and obtain at least 800 Coins', 30),  # Guards+
+
     Task('Complete the Varrock Agility Course', 's', 'Complete a lap of the Varrock Rooftop Agility Course', 10, 's'),
     Task('Complete 10 Laps of the Varrock Agility Course', 's', 'Complete 10 laps of the Varrock Rooftop Agility Course', 30, 's'),
     Task('Complete 50 Laps of a Rooftop Agility Course', '', 'Complete 50 laps of any Rooftop Agility Course', 30),  # if needed
@@ -163,13 +171,6 @@ routed_tasks = [
     Task('Pet the Museum Camp dog', 's', 'Pet the dog in the Museum Camp on Fossil Island', 10, 's'),
     Task('Build a Bank on Fossil Island', 's', 'Build a Bank at the Museum Camp on Fossil Island', 30, 's'),
     Task('Fully Unlock the Mycelium Transportation System', 's', 'Unlock every destination for the Mycelium Transportation System on Fossil Island', 30, 's'),
-
-    # FIXME do below if thieving unlocked
-    # Task('Pickpocket a H.A.M. Member', 's', 'Pickpocket any H.A.M. member at their hideout', 30, 's'),  # Iron Dagger, Steel Pickaxe, Steel Axe
-    # Task('Equip an Iron dagger', 's', 'Equip an Iron dagger', 10, 's'),  # From HAM
-    # Task('Pickpocket a Master Farmer', '', 'Successfully pickpocket from a Master farmer', 30),
-    # Task('Pickpocket a Varrock Guard', 's', 'Pickpocket any Varrock Guard', 30, 's'),  # New!
-    # Task('Obtain 800 Coins From Coin Pouches At Once', '', 'Open a stack of Coin Pouches and obtain at least 800 Coins', 30),  # Guards+
 
     # Draynor 2
     Task('Fletch Some Arrow Shafts', '', 'Fletch some Arrow Shafts', 10),
