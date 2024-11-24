@@ -303,7 +303,6 @@ routed_tasks = [
     Task('Gain a Unique Item From an Easy Clue', '', 'Gain a unique item from an Easy Clue Scroll Reward Casket', 30),
     Task('Equip a Mithril Weapon', '', 'Equip any Mithril weapon', 30),  # Vampyre slayer gets you there
     Task('Clean a Grimy Guam', '', 'Clean a Grimy Guam', 30),
-    Task('Gain a Unique Item From an Easy Clue', '', 'Gain a unique item from an Easy Clue Scroll Reward Casket', 30),
     Task('Build an Oak Larder', '', 'Build an Oak Larder in a Kitchen in your Player Owned House', 30),
 
     # Can shopscape these
@@ -376,9 +375,6 @@ wont_route = [
     Task('Equip an Obsidian Cape', 's', 'Equip an Obsidian Cape', 30, 's'),
     Task('Use the Protect from Melee Prayer', '', 'Use the Protect from Melee Prayer', 30),
     Task('Mine some Ore With a Rune Pickaxe', '', 'Mine any ore using a Rune Pickaxe', 30),
-]
-
-fishing_cooking = [
     Task('Catch 50 Karambwan', 's', 'Catch 50 Karambwan on Karamja', 30, 's'),
 ]
 
