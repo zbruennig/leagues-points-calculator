@@ -8,6 +8,7 @@ routed_tasks = [
     Task('Achieve Your First Level 5', '', 'Reach level 5 in any skill (not including Agility, Hitpoints and Runecraft)', 10),
     Task('Achieve Your First Level 10', '', 'Reach level 10 in any skill (not including Agility and Hitpoints)', 10),
     Task('Use the Northern Staircase in Lumbridge', 's', 'Use the Northern Staircase in Lumbridge Castle to go upstairs from the bottom floor', 10, 's'),
+    Notice('Claim Dramen Staff'),
     Notice('Claim Anti-Dragon Shield'),
     Notice('Claim free runes and ironman armor'),
     Notice('Bank / Prepare Inv - FIGURE OUT WHAT TO BUY FROM GENERAL STORE, Bucket, Shears, Pot, sell starting weps/shield'),
@@ -357,6 +358,7 @@ routed_tasks = [
     Task('Equip an Adamant Weapon', '', 'Equip any Adamant weapon', 30),  # if done with combat xp multiplier should be there
     Task('Build an Oak Larder', '', 'Build an Oak Larder in a Kitchen in your Player Owned House', 30),
     Task('Reach Total Level 250', '', 'Reach a Total Level of 250', 30),
+    Task('Snare a Bird', '', 'Catch any bird with a Bird Snare', 10),
 
     Header('Can shopscape smithing'),
     Task('Smelt a Steel Bar', '', 'Use a Furnace to smelt a Steel Bar', 30),
