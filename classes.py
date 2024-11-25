@@ -122,7 +122,16 @@ class BossCollection:
         })
 
 
-class Task:
+class Displayable:
+    def __init__(self, name: str):
+        self.name = name
+
+    @property
+    def display(self) -> str:
+        return self.name
+
+
+class Task(Displayable):
     def __init__(
         self,
         name: str,
@@ -213,3 +222,33 @@ class Task:
     @property
     def is_starter(self) -> bool:
         return self.points <= 40 and self.area in ['', 's']
+
+    @property
+    def display(self) -> str:
+        return f'{self.points}: {self.name}'
+
+
+class Notice(Displayable):
+    def __init__(self, note: str):
+        self.name = note
+
+    @property
+    def display(self) -> str:
+        return f'**{self.name}**'
+
+
+class Header(Displayable):
+    def __init__(self, header: str):
+        self.name = header
+    @property
+    def display(self) -> str:
+        return f'\n-{self.name.upper()}-'
+
+
+class Banking(Displayable):
+    def __init__(self, note: str):
+        self.name = note
+
+    @property
+    def display(self) -> str:
+        return f'$BANK {self.name}'
