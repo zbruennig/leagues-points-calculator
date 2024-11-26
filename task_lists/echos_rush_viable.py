@@ -1,7 +1,7 @@
 from classes import Task, Notice, Header, Banking
 
 routed_tasks = [
-    Header('Lumbridge - Remember to RAKE!'),
+    Header('Lumbridge - Remember to RAKE! I will be reminding you often because idk how to do early farming'),
     Task('Complete the Leagues Tutorial', '', 'Complete the Leagues Tutorial and begin your adventure', 10),
     Task('Open the Leagues Menu', '', 'Open the Leagues Menu found within the Journal Panel', 10),
     Task('Achieve Your First Level Up', '', 'Level up any of your skills for the first time', 10),
@@ -12,11 +12,12 @@ routed_tasks = [
     Notice('Claim Echo Harpoon'),
     Notice('Claim Anti-Dragon Shield'),
     Notice('Claim free runes and ironman armor'),
-    Notice('Bank / Prepare Inv - FIGURE OUT WHAT TO BUY FROM GENERAL STORE, 2x Bucket, Shears, Pot, sell starting weps/shield'),
+    Notice('Bank / Prepare Inv - Buy 2 Buckets, Shears, Pot, from general store, sell starting weps/shield'),
     Task('Kill a Spider by kicking it', 's', 'Kill a Spider in Lumbridge by kicking it', 10, 's'),  # New!
     Task('Rake a Farming Patch', '', 'Rake any Farming patch', 10),  # Store rake on leprechaun
     Task('Dance in a graveyard', '', 'Dance in a graveyard', 10),
     Banking('@Castle top floor, need shears/harpoon/dramen equipped, axe, pot, pickaxe for copper maybe'),
+    Notice('Really try to mine a copper here so you don\'t have to run all the way thru Isle of Souls later'),
     Task('Catch a Shrimp', '', 'Catch Raw Shrimp while Fishing', 10),
     Task('Cook Shrimp', '', 'Cook Raw Shrimp', 10),
     Task('Successfully Cook 5 Pieces of Food', '', 'Cook 5 pieces of food in a row without burning them', 30),
@@ -72,10 +73,10 @@ routed_tasks = [
     Task('Stroke your cat', 's', 'Get a cat and stroke it!', 10, 's'),  # New, -100 for Gertrude
 
     Header('Minigame to Soul Wars, Combat Mastery 1, Edgeville'),
+    Notice('If you mined copper in Lumbridge and killed the Moss Giant already, just go to Edgeville'),
     Task('Defeat a Moss Giant', '', 'Defeat a Moss Giant', 10),  # Or just do on isle of souls?
     Notice('Want to do most of our mining in Frem because those spots will be quieter, copper is just annoying there'),
     Task('Mine some Copper Ore', '', 'Mine some Copper Ore', 10), # Tin ore on jatizso just get the copper
-    Notice('Don\'t mine clay if you\'re worried about lesser demon line, can do in Frem'),
     Task('Kill an Imp with an earth spell', 's', 'Kill an Imp with an earth spell', 10, 's'),  # New!  # !!!FIXME BOTTLENECK
     Task('Scatter some Ashes', '', 'Scatter some Ashes', 10),  # New!
     Task('Visit Deaths Domain', '', 'Visit Deaths Domain', 10),
@@ -90,7 +91,8 @@ routed_tasks = [
     Task('Visit the Rune Essence Mine', '', 'Visit the Rune Essence Mine', 10),
     Task('Mine some essence', '', 'Mine some essence', 10),  # New!
 
-    Header('Enchanted Valley - BKQ, Nature Spirits for a while maybe get lucky'),
+    Header('Enchanted Valley - BKQ, Nature Spirits for a while maybe get lucky on a rune axe.'),
+    Notice('You\'re mostly here for the bunnies though just fight tree spirits if they need to respawn'),
     Task('Kill 5 Bunnies', '', 'Kill 5 Bunnies', 30),  # New!  # !!!FIXME BOTTLENECK
     Task('Achieve Your First Level 20', '', 'Reach level 20 in any skill', 10),
 
@@ -131,11 +133,12 @@ routed_tasks = [
     Task('Pray at an Altar in Lumbridge', 's', 'Pray at an Altar in Lumbridge', 10, 's'),  # New!
     Task('Pickpocket a Citizen', '', 'Pickpocket a Man or a Woman', 10),
     Task('Open 28 Coin Pouches At Once', '', 'Open 28 Coin Pouches at once', 30),
-    Notice('You get 800 here because DD triples your pouch cape, else you get this at Varrock guards later'),
+    Notice('You get 800 here because DD triples your pouch cap, else you get this at Varrock guards later'),
     Task('Obtain 800 Coins From Coin Pouches At Once', '', 'Open a stack of Coin Pouches and obtain at least 800 Coins', 30),  # Guards+
     Task('Reach Combat Level 10', '', 'Reach Combat Level 10', 10),
     Notice('Turn in cooks assistant'),
     Task('Burn Some Food', '', 'Burn any kind of food while trying to cook it', 10),
+    Notice('Use a cooked food on a range to burn it for Animal Wrangler-ers'),
     Task('Use the Range in Lumbridge Castle', 's', 'Use the Range in Lumbridge Castle to cook some food', 30, 's'),
     Banking('Wool, Harpoon, Magic Equip, Money, Axe'),
     Task('Spin a Ball of Wool', '', 'Use a Spinning Wheel to spin a Ball of Wool', 10),
@@ -179,12 +182,14 @@ routed_tasks = [
     Notice('Grab 2-3 onions from field in SE Rellekka'),
     Task('Eat an Onion', 's', 'Eat an Onion, raw', 10, 's'),  # New!
     Notice('Fill inv with clay from Relekka mining spot, switch to steel pick from HAM once 6 (can\'t equip yet)'),
+    Notice('Drop the bronze pick once you reach level 6'),
     Task('Mine some Ore With a Steel Pickaxe', '', 'Mine any ore using a Steel Pickaxe', 10),
     Header('Lunar Isle'),
     Task('Switch to the Lunar Spellbook', 'f', 'Switch to the Lunar Spellbook.', 10, 'f'),
     Notice('Switch back after'),
     Task('Use the Bank on Lunar Isle', 'f', 'Use the Bank on Lunar Isle.', 10, 'f'),
     Notice('Buy a law rune or 5, 1/2 cosmic for enchanting, and some chaos and death runes from Baba Yaga.'),
+    Notice('If you have gp, buy some natures too, to start alching as you run. Otherwise come back when you do.'),
     Banking('Clear your inv of everything except for the steel pick, bank your seal of passage'),
     Notice('Get kicked back to Rellekka and mine more clay'),
     Task('Use the Bank on Jatizso', 'f', 'Use the Bank on Jatizso.', 10, 'f'),
@@ -196,7 +201,7 @@ routed_tasks = [
     Task('Kill a Yak', 'f', 'Kill a Yak.', 10, 'f'),
     Task('Smelt a Bronze Bar', '', 'Use a Furnace to smelt a Bronze Bar', 10),
 
-    Header('Varrock - Figure out Kudos, get Trowel / Specimen Brush / Specimen Jar. Progress Vampyre slayer and have beer for barb village'),
+    Header('Varrock - Figure out your Kudos, get Trowel / Specimen Brush / Specimen Jar. Progress Vampyre slayer and have beer for barb village'),
     Task('Teleport Using Law Runes', '', 'Cast any teleport spell that uses Law Runes', 30),
     Notice('Consider making knives to begin range training'),
     Task('Smith a Bronze full helm', '', 'Use an Anvil to smith a Bronze full helm', 10),
@@ -213,12 +218,13 @@ routed_tasks = [
     Task('Achieve Your First Level 40', '', 'Reach level 40 in any skill', 30),
     Task('Achieve Your First Level 50', '', 'Reach level 50 in any skill', 30),
     Task('Reach Total Level 100', '', 'Reach a Total Level of 100', 30),
+    Notice('Consider going back to Baba Yaga for nature runes to 0-time alch. Remember your seal of passage. You can Compass back'),
 
     Task('Complete the Varrock Agility Course', 's', 'Complete a lap of the Varrock Rooftop Agility Course', 10, 's'),
     Task('Complete 10 Laps of the Varrock Agility Course', 's', 'Complete 10 laps of the Varrock Rooftop Agility Course', 30, 's'),
     Notice('Below if needed, skip otherwise'),
     Task('Complete 50 Laps of a Rooftop Agility Course', '', 'Complete 50 laps of any Rooftop Agility Course', 30),  # if needed
-    Notice('Clean til you find digsite pendant for kudos. Claim rewards from info clerk once you have all 5. Don\'t talk to Minas yet!'),
+    Notice('Clean til you find digsite pendant for kudos. Claim rewards from info clerk once you have 3, or 2 if you talked to Minas before Frem. Don\'t talk to Minas yet!'),
     Notice('Definitely do quiz so you can start birdhouses'),
     Task('Complete the Natural History Quiz', 's', 'Complete the Natural History Quiz in the Varrock Museum', 10, 's'),
 
@@ -348,6 +354,7 @@ routed_tasks = [
     Notice('If I can get away with it, I will try to do a bit of each skill and stop once the fast tasks dry up.'),
 
     Header('Honk mimimimimimi we have to woodcut in Draynor'),
+    Notice('Before starting WC training consider farming the Gout Tubers for Karamja diary and likely gem machete task. You should have max rate at this point'),
     Notice('Clue compass to wizards tower, fight wizards for robes'),
     Task('Equip a Wizard Robe and Hat', '', 'Equip any wizard robe along with any wizard hat', 30),
     Notice('Use this time to figure out what you want to do next'),
@@ -407,7 +414,7 @@ routed_tasks = [
     Task('Smith 10 Steel bolts (unf)', '', 'Use an Anvil to smith 10 Steel bolts (unf)', 30),
     Task('Smith a Steel Platebody', '', 'Use an Anvil to smith a Steel Platebody', 30),
 
-    Header('Some Kourend stuff'),
+    Header('Some Kourend stuff, if you take another region you can probably swap out the tasks easily enough'),
     Notice('Good chance Kourend will need a few more tasks to unlock, knock these out once you can'),
     Notice('Remember your birdhouses and rakes'),
     Task('Kill a Necromancer', '', 'Kill a Necromancer', 10, 'k | z'),
@@ -424,6 +431,8 @@ routed_tasks = [
     Task('Headbang with KetSal Kuk', 'z', 'Headbang with KetSal Kuk.', 30, 'z'),
     Task('Complete Getting Ahead', 'z', 'Complete  Getting Ahead  quest.', 30, 'z'),  # 26 Construction but you should have it from setting up BH runs
     Task('Inferior Demonbane Demon Kill', 'z', 'Kill a demon using the Inferior Demonbane spell.', 30, 'z'),
+    Notice('If you\'re in catacombs now consider safespotting Fire Giants for Combat Mastery (100% weakness to water spells)'),
+    Notice('From entrance, run south then west through the other giants, safespot on the ramp to them'),
     Task('Enter the Cooks Guild', 's', 'Enter the Cooks Guild west of Varrock', 30, 's'),  # Buy chefs hat in Shayzien
     Task('Cast a Blast Spell', '', 'Cast any blast spell', 30),
     Task('Cast High Level Alchemy', '', 'Cast the High Level Alchemy spell', 30),
@@ -672,6 +681,7 @@ for task in routed_tasks:
         task_count += 1
         if task_count == r1_tasks_needed:
             print(f"~~{r1_tasks_needed} TASKS COMPLETED, BUT CLAIM KUDOS FROM MINAS BEFORE PICKING REGION~~")
+            print('Alternatively don\'t claim the kudos, clean 3 finds + museum quiz will get you to the level you need later')
         if task_count == r2_tasks_needed:
             print(f"~~{r2_tasks_needed} TASKS COMPLETED~~")
         if not t2_points_reached and current_points >= t2_points_needed:
