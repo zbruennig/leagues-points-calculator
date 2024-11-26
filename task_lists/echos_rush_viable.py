@@ -184,7 +184,7 @@ routed_tasks = [
     Task('Switch to the Lunar Spellbook', 'f', 'Switch to the Lunar Spellbook.', 10, 'f'),
     Notice('Switch back after'),
     Task('Use the Bank on Lunar Isle', 'f', 'Use the Bank on Lunar Isle.', 10, 'f'),
-    Notice('Buy a law rune or 5, and some chaos runes from Baba Yaga. Maybe a few deaths too.'),
+    Notice('Buy a law rune or 5, 1/2 cosmic for enchanting, and some chaos and death runes from Baba Yaga.'),
     Banking('Clear your inv of everything except for the steel pick, bank your seal of passage'),
     Notice('Get kicked back to Rellekka and mine more clay'),
     Task('Use the Bank on Jatizso', 'f', 'Use the Bank on Jatizso.', 10, 'f'),
@@ -203,6 +203,7 @@ routed_tasks = [
     Task('Smith a Bronze plateskirt', '', 'Use an Anvil to smith a Bronze plateskirt', 10),
     Notice('Rake!'),  # TODO add more rakes
     Task('Pickpocket a Varrock Guard', 's', 'Pickpocket any Varrock Guard', 30, 's'),  # New!
+    Notice('Best Dirty Deeds spot I could find is on the roof of Varrock Castle'),
     Notice('Thieving up to 45 or maybe 50, make sure you have enough gp for daddys home, including 100 nails'),
     Task('Steal From the Varrock Tea Stall', 's', 'Steal from the Tea Stall in Varrock', 10, 's'),
     Notice('IMPORTANT! Need to use Tea on Elsie'),
@@ -342,8 +343,9 @@ routed_tasks = [
     Task('Obtain a Gem While Mining', '', 'Obtain any kind of gem whilst Mining a rock', 30),
     Task('Fletch 150 Iron Arrows', '', 'Fletch 150 Iron Arrows', 30),
 
-    Header('All of below are some suggestions and could be out of order. Do whatever makes the most sense.'),
-    Notice('It\'s hard to prescribe a single path now, multiple paths depending on your choices and rng are available.'),
+    Header('All of below are _kind of_ in order but are more flexible since we can tele everywhere.'),
+    Notice('You could be fine to skip the grindier ones, but I wanted to add as much as I could route to have options.'),
+    Notice('If I can get away with it, I will try to do a bit of each skill and stop once the fast tasks dry up.'),
 
     Header('Honk mimimimimimi we have to woodcut in Draynor'),
     Notice('Clue compass to wizards tower, fight wizards for robes'),
@@ -358,22 +360,26 @@ routed_tasks = [
     Task('Chop 100 Willow Logs', '', 'Chop 100 Willow Logs from Willow Trees', 30),
     Task('Fletch a Willow Shortbow (u)', '', 'Fletch a Willow Shortbow (u)', 30),  # New!
     Task('Equip a Willow Shield', '', 'Equip a Willow Shield', 30),
-    Task('Mine 25 Pure Essence', 's', 'Mine 25 Pure Essence', 30, 's'),  # New!
     Task('Obtain a Bird Nest', '', 'Obtain a Bird Nest whilst cutting down trees', 10),
 
-    Header('Isle of souls?'),
+    Header('Isle of Souls'),
+    Banking('Harpoon, Axe (if woodcutting), Runes for Blue Dragon, food'),
     Notice('Remember your birdhouses and rakes'),
     Task('Open the Dark Chest', 's', 'Open the Dark Chest', 30, 's'),
+    Notice('Can get a bird snare on the isle next to the spinning wheel icon'),
     Task('Snare a Bird', '', 'Catch any bird with a Bird Snare', 10),
+    Task('Obtain a Casket from Fishing', '', 'Obtain a Casket from Fishing', 10),
     Task('Cut 50 Maple Logs', '', 'Cut 50 Maple Logs', 30),  # New!
     Task('Burn 25 Maple Logs', '', 'Burn 25 Maple Logs', 30),  # New!
     Task('Build a Waka Canoe', '', 'Build a Waka Canoe', 30),
     Task('Bury Some Wyvern or Dragon Bones', '', 'Bury either some Wyvern Bones or some Dragon Bones', 30),
 
-    Header('Start PVM?'),
+    Header('Start PVM a bit'),
     Task('Complete 1 Slayer Task', '', 'Complete 1 Slayer Task', 30),
+    Notice('Keep some bones from slayer monsters for Demon Slayer, we will train prayer later'),
     Task('Complete Demon Slayer', 's', 'Complete the  Demon Slayer  quest', 30, 's'),
     Task('Defeat a Greater Demon on Karamja', 's', 'Defeat a Greater Demon on Karamja', 30, 's'),
+    Task('Slay 250 Creatures', '', 'Slay 250 creatures whilst on a Slayer Task', 30),
     Task('Defeat a Pyrefiend in the Fremennik Province', 'f', 'Defeat a Pyrefiendin the Fremennik Province.', 10, 'f'),
     Task('Defeat a Cockatrice in the Fremennik Province', 'f', 'Defeat a Cockatricein the Fremennik Province.', 10, 'f'),
     Task('Defeat a Rock Crab in the Fremennik Province', 'f', 'Defeat a Rock Crabin the Fremennik Province.', 10, 'f'),
@@ -384,6 +390,18 @@ routed_tasks = [
     Task('Complete the Easy Lumbridge & Draynor Diary', 's', 'Complete all of the easy tasks in the  Lumbridge & Draynor Achievement Diary', 30, 's'),
     Task('Complete the Easy Varrock Diary', 's', 'Complete all of the easy tasks in the  Varrock Achievement Diary', 30, 's'),
     Task('Complete the Easy Karamja Diary', 's', 'Complete all of the easy tasks in the  Karamja Achievement Diary', 30, 's'),
+
+    Header('Puro Puro'),
+    Task('Enter Puro Puro from Gielinor', '', 'Enter Puro Puro from a crop circle in mainland Gielinor', 10),
+    Task('Catch a Baby Impling', '', 'Catch a Baby Impling', 10),
+
+    Header('Shopscape smithing'),
+    Notice('Coal and Iron is available at Jatizso, pickpocket if you need money. I think Varrock guards are our best gp.'),
+    Notice('Use Blast Furnace. Alternatively, Rings of Forging.'),
+    Notice('Consider making knives to begin range training'),
+    Task('Smelt a Steel Bar', '', 'Use a Furnace to smelt a Steel Bar', 30),
+    Task('Smith 10 Steel bolts (unf)', '', 'Use an Anvil to smith 10 Steel bolts (unf)', 30),
+    Task('Smith a Steel Platebody', '', 'Use an Anvil to smith a Steel Platebody', 30),
 
     Header('Some Kourend stuff'),
     Notice('Good chance Kourend will need a few more tasks to unlock, knock these out once you can'),
@@ -408,41 +426,45 @@ routed_tasks = [
     Notice('Telegrab gold bar in varrock bank if needed'),
     Task('Use a Digsite Pendant to Teleport to Fossil Island', 's', 'Use a Digsite Pendant to teleport to Fossil Island', 30, 's'),
 
-
-    Header("At this point I probably have done/could do these:"),
-    Task('1 Easy Clue Scroll', '', 'Open a Reward casket for completing an easy clue scroll', 30),
-    Task('Gain a Unique Item From an Easy Clue', '', 'Gain a unique item from an Easy Clue Scroll Reward Casket', 30),
-    Task('Equip a Mithril Weapon', '', 'Equip any Mithril weapon', 30),  # Vampyre slayer gets you there
-    Task('Equip an Adamant Weapon', '', 'Equip any Adamant weapon', 30),  # if done with combat xp multiplier should be there
-    Task('Build an Oak Larder', '', 'Build an Oak Larder in a Kitchen in your Player Owned House', 30),
-    Task('Reach Total Level 250', '', 'Reach a Total Level of 250', 30),
-    Task('Reach Total Level 500', '', 'Reach a Total Level of 500', 30),
-    Task('1 Medium Clue Scroll', '', 'Open a Reward casket for completing a medium clue scroll', 30),
-    Task('Reach Base Level 5', '', 'Reach level 5 in every skill', 30),
-    Task('Enter the Tai Bwo Wannai Hardwood Grove', 's', 'Enter the Hardwood Grove in Tai Bwo Wannai', 30, 's'),
-    Task('5 Collection log slots', '', 'Obtain 5 unique Collection Log slots', 30),
-    Task('Eat some Purple Sweets', '', 'Eat some Purple Sweets', 30),
-    Task('Burn Some Coloured Logs', '', 'Burn some logs that have been coloured with a firelighter', 30),
-    Task('Create an Antipoison', '', 'Create an Antipoison', 10),
-
-
-    Header('Puro Puro'),
-    Task('Enter Puro Puro from Gielinor', '', 'Enter Puro Puro from a crop circle in mainland Gielinor', 10),
-    Task('Catch a Baby Impling', '', 'Catch a Baby Impling', 10),
-
-    Header('Can shopscape smithing'),
-    Notice('Consider making knives to begin range training'),
-    Task('Smelt a Steel Bar', '', 'Use a Furnace to smelt a Steel Bar', 30),
-    Task('Smith 10 Steel bolts (unf)', '', 'Use an Anvil to smith 10 Steel bolts (unf)', 30),
-    Task('Smith a Steel Platebody', '', 'Use an Anvil to smith a Steel Platebody', 30),
-
-    Header('Maybe defensive cast post books'),
+    Header('Defensive casting post Arceuus Library'),
     Task('Equip some Black armour', '', 'Equip either a Black Platebody, some Black Platelegs or a Black Full Helm', 30),
     Task('Equip some Steel armour', '', 'Equip either a Steel Platebody, some Steel Platelegs or a Steel Full Helm', 30),
     Task('Equip a Full Mithril Set', '', 'Equip a Mithril Platebody, a Mithril Full Helm and either some Mithril Platelegs or a Mithril Plateskirt', 30),
 
+    Header('Use your clues from skilling'),
+    Task('1 Easy Clue Scroll', '', 'Open a Reward casket for completing an easy clue scroll', 30),
+    Task('Gain a Unique Item From an Easy Clue', '', 'Gain a unique item from an Easy Clue Scroll Reward Casket', 30),
+    Task('1 Medium Clue Scroll', '', 'Open a Reward casket for completing a medium clue scroll', 30),
+    Task('5 Collection log slots', '', 'Obtain 5 unique Collection Log slots', 30),
+    Task('Eat some Purple Sweets', '', 'Eat some Purple Sweets', 30),
+    Task('Burn Some Coloured Logs', '', 'Burn some logs that have been coloured with a firelighter', 30),
+
+    Header('Pre-Bankers Note Runecrafting'),
+    Notice('Since you need this for Lumby diary anyways, probably should just knock out up to 50 Water Runes. 200 Essence and others, wait for BN'),
+    Task('Mine 25 Pure Essence', 's', 'Mine 25 Pure Essence', 30, 's'),  # New!
+    Task('Craft 50 Water Runes', 's', 'Craft 50 Water Runes from Essence at the Water Altar', 30, 's'),
+    Task('Craft 200 Essence Into Runes', '', 'Use Runecrafting Altars to craft 200 essence into runes of any type', 30),
+
+    Header('Milestones'),
+    Task('Reach Total Level 250', '', 'Reach a Total Level of 250', 30),
+    Task('Reach Total Level 500', '', 'Reach a Total Level of 500', 30),
+    Task('Reach Total Level 750', '', 'Reach a Total Level of 750', 30),
+    Task('Reach Base Level 5', '', 'Reach level 5 in every skill', 30),
+    Task('Reach Base Level 10', '', 'Reach level 10 in every skill', 30),
+
+    Header("Miscellaneous things you could get but didn\'t know how to group:"),
+    Notice('You should have the attack level after finishing Vampyre Slayer'),
+    Task('Equip an Adamant Weapon', '', 'Equip any Adamant weapon', 30),  # if done with combat xp multiplier should be there
+    Task('Equip a Mithril Weapon', '', 'Equip any Mithril weapon', 30),  # Vampyre slayer gets you there
+    Task('Build an Oak Larder', '', 'Build an Oak Larder in a Kitchen in your Player Owned House', 30),
+    Task('Enter the Tai Bwo Wannai Hardwood Grove', 's', 'Enter the Hardwood Grove in Tai Bwo Wannai', 30, 's'),
+    Task('Create an Antipoison', '', 'Create an Antipoison', 10),
+    Task('Dismantle 20 Filled Bird Houses', 's', 'Dismantle 20 filled Bird Houses on Fossil Island', 30, 's'),
+
+    Header('End of branching paths, final bit expects you to be 12x at T5'),
+
     # At 12x with likely bankers note, if not there do at 8x
-    Header('With 12x or maybe just 8x, finish thieving stalls. Bankers Note just isn\'t possible with it t6 sorry.'),
+    Header('With 12x or maybe just 8x, finish thieving stalls. If we\'re still 8x at this point I\'ve got nothing left sorry'),
     Task('Achieve Your First Level 90', '', 'Reach level 90 in any skill.', 200),
     Task('Achieve Your First Level 95', '', 'Reach level 95 in any skill.', 200),
     Task('Reach Level 99 Thieving', '', 'Reach level 99 in your Thieving skill.', 200),
@@ -496,10 +518,8 @@ wont_route = [
     Task('Gain a Unique Item From a Hard Clue', '', 'Gain a unique item from a Hard Clue Scroll Reward Casket', 30),
     Task('Gain a Unique Item From a Master Clue', '', 'Gain a unique item from a Master Clue Scroll Reward Casket', 30),
     Task('Gain a Unique Item From a Medium Clue', '', 'Gain a unique item from a Medium Clue Scroll Reward Casket', 30),
-    Task('Reach Base Level 10', '', 'Reach level 10 in every skill', 30),
     Task('Reach Base Level 20', '', 'Reach level 20 in every skill', 30),
     Task('Reach Base Level 30', '', 'Reach level 30 in every skill', 30),
-    Task('Reach Base Level 5', '', 'Reach level 5 in every skill', 30),
     Task('Read a prayer book near a lectern', '', 'Read a Prayer book near a lectern', 30, 'm | f'),
     Task('Equip a Yew Shortbow', '', 'Equip a Yew Shortbow', 30),
     Task('Catch a Grey Chinchompa', '', 'Catch a Grey Chinchompa', 30),  # New!
@@ -528,8 +548,6 @@ starter_tasks = [
     Task('Make a Pineapple Pizza', '', 'Make a Pineapple Pizza', 30),
     Task('Reach a Prayer Bonus of 15', '', 'Equip enough item to reach a Prayer bonus of 15 or more', 30),
     Task('Reach Combat Level 75', '', 'Reach Combat Level 75', 30),
-    Task('Reach Total Level 500', '', 'Reach a Total Level of 500', 30),
-    Task('Reach Total Level 750', '', 'Reach a Total Level of 750', 30),
     Task('Scrape some blue dragonhide', '', 'Scrape some blue dragonhide', 30),
     Task('Complete the Medium Karamja Diary', 's', 'Complete all of the medium tasks in the  Karamja Achievement Diary', 30, 's'),
     Task('Catch 50 Implings in Puro-Puro', 's', 'Catch 50 Implings in Puro-Puro', 30, 's'),
@@ -538,14 +556,12 @@ starter_tasks = [
     Task('Complete the Easy Varrock Diary', 's', 'Complete all of the easy tasks in the  Varrock Achievement Diary', 30, 's'),
     Task('Complete the Medium Varrock Diary', 's', 'Complete all of the medium tasks in the  Varrock Achievement Diary', 30, 's'),
     Task('Craft 50 Cosmic Runes', 's', 'Craft 50 Cosmic Runes from Essence at the Cosmic Altar from Essence', 30, 's'),
-    Task('Craft 50 Water Runes', 's', 'Craft 50 Water Runes from Essence at the Water Altar', 30, 's'),
     Task('Defeat Bryophyta', 's', 'Defeat Bryophyta in Varrock Sewers', 30, 's'),
     Task('Defeat Obor', 's', 'Defeat Obor in Edgeville Dungeon', 30, 's'),
     Task('Make a pie for Romily', 's', 'Make a pie for Romily, north west of Varrock', 30, 's'),  # New!
 ]
 
 difficult_tasks = [
-    Task('Chop a log from a potato tree', 's', 'Chop a log from a tree that is curiously in a potato field', 10, 's'),
     Task('25 Easy Clue Scrolls', '', 'Open 25 Reward caskets for completing easy clue scrolls', 30),
     Task('25 Elite Clue Scrolls', '', 'Open 25 Reward caskets for completing elite clue scrolls', 30),
     Task('25 Hard Clue Scrolls', '', 'Open 25 Reward caskets for completing hard clue scrolls', 30),
@@ -560,7 +576,6 @@ difficult_tasks = [
     Task('Catch a Swamp Lizard or Salamander', '', 'Catch either a Swamp Lizard or any kind of Salamander', 30, 'm | d | k | w | v'),
     Task('Complete 10 Mahogany homes contracts', '', 'Complete 10 Mahogany homes contracts', 30),
     Task('Complete 25 Mahogany homes contracts', '', 'Complete 25 Mahogany homes contracts', 30),
-    Task('Complete 50 Laps of a Rooftop Agility Course', '', 'Complete 50 laps of any Rooftop Agility Course', 30),
     Task('Complete a Mahogany homes adept contract', '', 'Complete a  Mahogany Homes adept contract', 30, ''),
     Task('Complete a Mahogany homes novice contract', '', 'Complete a  Mahogany Homes novice contract', 30, ''),
     Task('Complete the Easy Western Provinces Diary', '', 'Complete all of the easy tasks in the  Western Provinces Achievement Diary', 30, 'k'),
@@ -576,7 +591,6 @@ difficult_tasks = [
     Task('Complete the Ritual Forestry Event', '', 'Complete the Ritual event spawned via Forestry', 30),
     Task('Complete the Struggling Sapling event', '', 'Complete the Struggling Sapling event spawned via Forestry', 30),
     Task('Complete the Surprise Exam random event', '', 'Complete the Surprise Exam random event', 30),
-    Task('Craft 200 Essence Into Runes', '', 'Use Runecrafting Altars to craft 200 essence into runes of any type', 30),
     Task('Craft 4 Runes With 1 Essence', '', 'Use a Runecrafting Altar to craft 4 of any type of rune using a single essence', 30),
     Task('Create a green dhide shield', '', 'Create a green dhide shield', 30),
     Task('Create a Guthix Rest Tea', '', 'Create a Guthix Rest Tea', 30, 'f | d | k'),
@@ -614,14 +628,12 @@ difficult_tasks = [
     Task('Make 30 Prayer Potions', '', 'Make 30 Prayer Potions', 30),
     Task('Mine 50 Mithril Ore', '', 'Mine 50 Mithril Ore', 30),
     Task('Open the Mystery Box', '', 'A boat is a boat, but the mystery box could be anything, even a boat!', 30),
-    Task('Slay 250 Creatures', '', 'Slay 250 creatures whilst on a Slayer Task', 30),
     Task('Smith 150 Iron Arrowtips', '', 'Use an Anvil to smith 150 Iron Arrowtips', 30),
     Task('Smith 250 Mithril bolts (unf)', '', 'Use an Anvil to smith 250 Mithril bolts (unf)', 30),
     Task('Craft 50 Nature Runes', 's', 'Craft 50 Nature Runes from Essence at the Nature Altar', 30, 's'),
     Task('Defeat 50 Tormented Demons', 's', 'Defeat 50 Tormented Demons', 30, 's'),
     Task('Defeat a Fossil Island Wyvern', 's', 'Defeat any type of Wyvern on Fossil Island', 30, 's'),
     Task('Defeat a Tormented Demon', 's', 'Defeat a Tormented Demon', 30, 's'),
-    Task('Dismantle 20 Filled Bird Houses', 's', 'Dismantle 20 filled Bird Houses on Fossil Island', 30, 's'),
     Task('Equip the Forestry Basket', 's', 'Obtain and Equip the Forestry Basket', 30, 's'),
     Task('Get a Gem from a Gorak', 's', 'Obtain a gem drop from a Gorak', 30, 's'),
 ]
