@@ -32,6 +32,8 @@ routed_tasks = [
     Notice('Grab a grain in the wheat field to make flour with'),
     Task('Make some Flour', '', 'Make some Flour in a windmill', 30),
     Banking('Prepare Inv, Food, Bucket, Runes, Shears for possible wool KC. Dramen/ADS/Ironman armor equipped. Also Buckets + Runes'),
+
+    Header('Stronghold Rush'),
     Notice('Fairy Ring to Edgeville - DKR'),
     Task('Use a Fairy Ring', 's', 'Use any Fairy Ring', 10, 's'),
     Notice('Can kill a rat in 2nd room of floor 2'),
@@ -49,7 +51,7 @@ routed_tasks = [
     Notice('Grab 3x Redberries'),
 
     Header('Varrock - RAKE!'),
-    Banking('Can bank if you need to here, tbd. Bank redberries, wool, flour, milk, needle'),
+    Banking('Can bank if you need to. Bank redberries, wool, flour, milk, needle'),
     Notice('BUY RUNES - 250 Air, 150 Mind, 30 earth, 30 water = like 2k'),
     Notice('Talk to Minas upstairs in the museum to get kudos'),
     Task('Get a haircut', 's', 'Go and get a haircut', 10, 's'),  # New!
@@ -201,7 +203,7 @@ routed_tasks = [
     Task('Kill a Yak', 'f', 'Kill a Yak.', 10, 'f'),
     Task('Smelt a Bronze Bar', '', 'Use a Furnace to smelt a Bronze Bar', 10),
 
-    Header('Varrock - Figure out your Kudos, get Trowel / Specimen Brush / Specimen Jar. Progress Vampyre slayer and have beer for barb village'),
+    Header('Varrock - Figure out your Kudos situation, get Trowel / Specimen Brush / Specimen Jar. Progress Vampyre slayer and have beer for barb village'),
     Task('Teleport Using Law Runes', '', 'Cast any teleport spell that uses Law Runes', 30),
     Notice('Consider making knives to begin range training'),
     Task('Smith a Bronze full helm', '', 'Use an Anvil to smith a Bronze full helm', 10),
@@ -385,16 +387,6 @@ routed_tasks = [
     Task('Build a Waka Canoe', '', 'Build a Waka Canoe', 30),
     Task('Bury Some Wyvern or Dragon Bones', '', 'Bury either some Wyvern Bones or some Dragon Bones', 30),
 
-    Header('Start PVM a bit'),
-    Task('Complete 1 Slayer Task', '', 'Complete 1 Slayer Task', 30),
-    Notice('Keep some bones from slayer monsters for Demon Slayer, we will train prayer later'),
-    Task('Complete Demon Slayer', 's', 'Complete the  Demon Slayer  quest', 30, 's'),
-    Task('Defeat a Greater Demon on Karamja', 's', 'Defeat a Greater Demon on Karamja', 30, 's'),
-    Task('Slay 250 Creatures', '', 'Slay 250 creatures whilst on a Slayer Task', 30),
-    Task('Defeat a Pyrefiend in the Fremennik Province', 'f', 'Defeat a Pyrefiendin the Fremennik Province.', 10, 'f'),
-    Task('Defeat a Cockatrice in the Fremennik Province', 'f', 'Defeat a Cockatricein the Fremennik Province.', 10, 'f'),
-    Task('Defeat a Rock Crab in the Fremennik Province', 'f', 'Defeat a Rock Crabin the Fremennik Province.', 10, 'f'),
-
     Header('Do your diaries'),
     Notice('Especially for Karamja, try to wait on collecting rewards til 12x'),
     Task('Complete the Easy Fremennik Diary', 'f', 'Complete all of the easy tasks in the  Fremennik Achievement Diary.', 40, 'f'),
@@ -413,6 +405,18 @@ routed_tasks = [
     Task('Smelt a Steel Bar', '', 'Use a Furnace to smelt a Steel Bar', 30),
     Task('Smith 10 Steel bolts (unf)', '', 'Use an Anvil to smith 10 Steel bolts (unf)', 30),
     Task('Smith a Steel Platebody', '', 'Use an Anvil to smith a Steel Platebody', 30),
+
+    Header('Start PVM a bit'),
+    Task('Complete 1 Slayer Task', '', 'Complete 1 Slayer Task', 30),
+    Notice('Keep some bones from slayer monsters for Demon Slayer, we will train prayer later'),
+    Task('Complete Demon Slayer', 's', 'Complete the  Demon Slayer  quest', 30, 's'),
+    Task('Defeat a Greater Demon on Karamja', 's', 'Defeat a Greater Demon on Karamja', 30, 's'),
+    Task('Slay 250 Creatures', '', 'Slay 250 creatures whilst on a Slayer Task', 30),
+    Task('Defeat a Pyrefiend in the Fremennik Province', 'f', 'Defeat a Pyrefiendin the Fremennik Province.', 10, 'f'),
+    Task('Defeat a Cockatrice in the Fremennik Province', 'f', 'Defeat a Cockatricein the Fremennik Province.', 10, 'f'),
+    Task('Defeat a Rock Crab in the Fremennik Province', 'f', 'Defeat a Rock Crabin the Fremennik Province.', 10, 'f'),
+    Notice('Requires 500 TL and 40 Cmb to join'),
+    Task('Win a Game of Soul Wars', 's', 'Win a game of Soul Wars', 30, 's'),
 
     Header('Some Kourend stuff, if you take another region you can probably swap out the tasks easily enough'),
     Notice('Good chance Kourend will need a few more tasks to unlock, knock these out once you can'),
@@ -490,15 +494,13 @@ routed_tasks = [
     Task('Superhuman Strength and Improved Reflexes', '', 'Use both the Superhuman Strength prayer and the Improved Reflexes prayer at the same time', 10),
     Task('Defeat Scurrius', 's', 'Defeat Scurrius', 30, 's'),
     Task('Reach Combat Level 25', '', 'Reach Combat Level 25', 10),
-    Notice('With 1 solo Scurrius you can add a second combat mastery point. I recommend putting it in the same tier as the first for the all-style accuracy boost.'),
+    Notice('With 1 solo Scurrius you can add a second combat mastery point. I recommend putting it in the same tier as the first for the all-style accuracy boost at t3.'),
     Notice('Once you have the accuracy boost, train ranged with all the knives you made.'),
     Task('Equip a Dorgeshuun Crossbow', 's', 'Equip a Dorgeshuun Crossbow', 30, 's'),
     Task('Equip a Rat Bone Weapon', 's', 'Obtain and equip any Rat Bone weaponry', 30, 's'),
     Task('Defeat Scurrius 10 times', 's', 'Defeat Scurrius 10 times', 30, 's'),
     Task('Reach Combat Level 50', '', 'Reach Combat Level 50', 30),
     Task('Defeat Scurrius 25 times', 's', 'Defeat Scurrius 25 times', 30, 's'),
-    Notice('Requires 500 TL and 40 Cmb to join'),
-    Task('Win a Game of Soul Wars', 's', 'Win a game of Soul Wars', 30, 's'),
     Notice('Try on the chickens in Rellekka because Misthalin ones are probably crowded'),
     Task('Kill three chickens in 6 seconds', '', 'Kill three chickens in 6 seconds', 30),
     Header('Okay, time to PVM!'),
@@ -667,7 +669,7 @@ r2_tasks_needed = 180
 t2_points_needed = 750
 t3_points_needed = 1500
 t4_points_needed = 2500
-t5_points_needed = 4500
+t5_points_needed = 5000
 
 t2_points_reached = False
 t3_points_reached = False
@@ -692,10 +694,10 @@ for task in routed_tasks:
             print(f"~~{current_points} PTS ACQUIRED - T3 MET~~")
         if not t4_points_reached and current_points >= t4_points_needed:
             t4_points_reached = True
-            print(f"~~{current_points} PTS ACQUIRED - T4 MET~~")
+            print(f"~~{current_points} PTS ACQUIRED - T4 PROBABLY MET~~")
         if not t5_points_reached and current_points >= t5_points_needed:
             t5_points_reached = True
-            print(f"~~{current_points} PTS ACQUIRED - T5 MET~~")
+            print(f"~~{current_points} PTS ACQUIRED - T5 PROBABLY MET~~")
         current_points += task.points
 
 
