@@ -198,7 +198,7 @@ starter_tasks = [
     Task('Craft an Emerald Ring', '', 'Craft an Emerald Ring', 30),
     Task('Craft Any Combination Rune', '', 'Use a Runecrafting Altar to craft any type of combination rune', 30),
     Task('Create a green dhide shield', '', 'Create a green dhide shield', 30),
-    Task('Create a Guthix Rest Tea', '', 'Create a Guthix Rest Tea', 30, 'f | d | k'),
+    Task('Create a Guthix Rest Tea', '', 'Create a Guthix Rest Tea', 30, 'f | d | k | a'),
     Task('Cut 50 Maple Logs', '', 'Cut 50 Maple Logs', 30),  # New!
     Task('Defeat a Lesser Demon', '', 'Defeat a Lesser Demon', 30),
     Task('Defeat a Superior Slayer Creature', '', 'Defeat any Superior Slayer Creature', 30),
@@ -210,7 +210,7 @@ starter_tasks = [
     Task('Equip a Full Mithril Set', '', 'Equip a Mithril Platebody, a Mithril Full Helm and either some Mithril Platelegs or a Mithril Plateskirt', 30),
     Task('Equip a Full Red Dragonhide Set', '', 'Equip a Red Dragonhide Body, some Red Dragonhide Chaps and some Red Dragonhide Vambraces', 30),
     Task('Equip a Granite Shield', '', 'Equip a Granite Shield', 30, 'k | a | f'),
-    Task('Equip a Lava Battlestaff', '', 'Equip a Lava Battlestaff', 30, 'k | a | w | m | d'),
+    Task('Equip a Lava Battlestaff', '', 'Equip a Lava Battlestaff', 30, 'k | a | w | m | d | z'),
     Task('Equip a Leaf-Bladed Sword', '', 'Equip a Leaf-Bladed Sword', 30, 'f | t'),
     Task('Equip a Maple Shortbow', '', 'Equip a Maple Shortbow', 30),
     Task('Equip a Mithril Weapon', '', 'Equip any Mithril weapon', 30),
