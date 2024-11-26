@@ -173,9 +173,9 @@ starter_tasks = [
     Task('Complete 10 Mahogany homes contracts', '', 'Complete 10 Mahogany homes contracts', 30, ''),  # TODO this may require grimoire, or a | f depending on specific implementation
     Task('Complete 25 Mahogany homes contracts', '', 'Complete 25 Mahogany homes contracts', 30, ''),  # TODO this may require grimoire, or a | f depending on specific implementation
     Task('Complete 50 Laps of a Rooftop Agility Course', '', 'Complete 50 laps of any Rooftop Agility Course', 30),
-    Task('Complete a Mahogany homes adept contract', '', 'Complete a  Mahogany Homes adept contract', 30, 'a'),
-    Task('Complete a Mahogany homes beginner contract', '', 'Complete a  Mahogany Homes beginner contract', 30, 'a'),
-    Task('Complete a Mahogany homes novice contract', '', 'Complete a  Mahogany Homes novice contract', 30, 'a'),
+    Task('Complete a Mahogany homes adept contract', '', 'Complete a  Mahogany Homes adept contract', 30, ''),
+    Task('Complete a Mahogany homes beginner contract', '', 'Complete a  Mahogany Homes beginner contract', 30, ''),
+    Task('Complete a Mahogany homes novice contract', '', 'Complete a  Mahogany Homes novice contract', 30, ''),
     Task('Complete the Easy Western Provinces Diary', '', 'Complete all of the easy tasks in the  Western Provinces Achievement Diary', 30, 'k'),
     Task('Complete the Evil Bob random event', '', 'Complete the Evil Bob random event', 30),  # New!
     Task('Complete the Flowering Bush event', '', 'Complete the Flowering Bush event spawned via Forestry', 30),
@@ -329,7 +329,7 @@ starter_tasks = [
     Task('Complete Sheep Shearer', 's', 'Complete the  Sheep Shearer  quest', 30, 's'),
     Task('Complete the Easy Lumbridge & Draynor Diary', 's', 'Complete all of the easy tasks in the  Lumbridge & Draynor Achievement Diary', 30, 's'),
     Task('Complete the Easy Varrock Diary', 's', 'Complete all of the easy tasks in the  Varrock Achievement Diary', 30, 's'),
-    Task('Complete the Medium Lumbridge & Draynor Diary', 's', 'Complete all of the medium tasks in the  Lumbridge & Draynor Achievement Diary', 30, 's'),
+    Task('Complete the Medium Lumbridge & Draynor Diary', 's', 'Complete all of the medium tasks in the  Lumbridge & Draynor Achievement Diary', 30, 'A | K | Z | D | M | F | W'),
     Task('Complete the Medium Varrock Diary', 's', 'Complete all of the medium tasks in the  Varrock Achievement Diary', 30, 's'),
     Task('Complete Vampyre Slayer', 's', 'Complete the  Vampyre Slayer  quest', 30, 's'),
     Task('Craft 50 Cosmic Runes', 's', 'Craft 50 Cosmic Runes from Essence at the Cosmic Altar from Essence', 30, 's'),

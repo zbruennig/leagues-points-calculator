@@ -579,7 +579,7 @@ all_known_tasks = [
   Task('Complete Rune Mysteries', '', 'Complete the  Rune Mysteries  quest.', 40),
   Task('Complete the Easy Lumbridge & Draynor Diary', '', 'Complete all of the easy tasks in the  Lumbridge & Draynor Achievement Diary.', 40),
   Task('Complete the Easy Varrock Diary', '', 'Complete all of the easy tasks in the  Varrock Achievement Diary.', 40),
-  Task('Complete the Medium Lumbridge & Draynor Diary', '', 'Complete all of the medium tasks in the  Lumbridge & Draynor Achievement Diary.', 40),  # Grimoire required for VWT, see Leather Body
+  Task('Complete the Medium Lumbridge & Draynor Diary', '', 'Complete all of the medium tasks in the  Lumbridge & Draynor Achievement Diary.', 40, 'A | K | Z | D | M | F | W'),  # Grimoire required for VWT, see Leather Body
   Task('Complete the Medium Varrock Diary', '', 'Complete all of the medium tasks in the  Varrock Achievement Diary.', 40),
   Task('Craft 50 Cosmic Runes', '', 'Craft 50 Cosmic Runes from Essence at the Cosmic Altar from Essence.', 40),
   Task('Defeat a Fossil Island Wyvern', '', 'Defeat any type of Wyvern on Fossil Island.', 40),

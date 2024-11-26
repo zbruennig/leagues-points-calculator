@@ -4,6 +4,7 @@ from boss_list import bosses
 from classes import BossCollection
 from task_lists.task_list_tbr import tasks
 from task_lists.master_task_list import all_known_tasks
+from task_lists.echoes_starter import starter_tasks
 import helper
 
 
