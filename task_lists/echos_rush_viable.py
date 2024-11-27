@@ -432,38 +432,61 @@ routed_tasks = [
     Task('Defeat a Pyrefiend in the Fremennik Province', 'f', 'Defeat a Pyrefiendin the Fremennik Province.', 10, 'f'),
     Task('Defeat a Cockatrice in the Fremennik Province', 'f', 'Defeat a Cockatricein the Fremennik Province.', 10, 'f'),
     Task('Defeat a Rock Crab in the Fremennik Province', 'f', 'Defeat a Rock Crabin the Fremennik Province.', 10, 'f'),
+    Task('Talk to the Voice of Yama', 'z', 'Talk to the Voice of Yama', 30, 'z'),  # New!
     Notice('Requires 500 TL and 40 Cmb to join'),
     Task('Win a Game of Soul Wars', 's', 'Win a game of Soul Wars', 30, 's'),
 
     Header('Some Kourend stuff, if you take another region you can probably swap out the tasks easily enough'),
     Notice('Good chance Kourend will need a few more tasks to unlock, knock these out once you can'),
     Notice('Remember your birdhouses and rakes'),
+
+    Header('Port Piscarilius Area'),
+    Task('Steal 1 Artefact', 'z', 'Steal an artefact for Captain Khaled in Piscarilius.', 10, 'z'),
+    Task('Capture 10 sandworms', 'z', 'Capture 10 sandworms', 30, 'z'),  # New!
+    Notice('Take boat to Lands End'),
+
+    Header('Lands End Area'),
+    Task('Bank at Lands End', 'z', 'Open your Bank using the Bank at Lands End', 10, 'z'),  # New!
+    Task('Kill a Barbarian in Kourend', 'z', 'Kill a Barbarian in Kourend', 10, 'z'),  # New!
     Task('Kill a Necromancer', '', 'Kill a Necromancer', 10, 'k | z'),
-    Task('Steal Some Silk', '', 'Steal some silk from a silk stall', 10, 'k | z | t | v'),
-    Task('Plant Seeds in an Allotment Patch', '', 'Plant some seeds in an Allotment patch', 10, 'a | m | k | z | t | v'),
-    Task('Restore 14 Prayer points in Hosidius', 'z', 'Restore exactly 14 Prayer Points when praying at an Altar in Hosidius', 30, 'z'),  # New!
+
+    Header('Shayzien Area'),
     Task('Drink a LizardKicker', 'z', 'Drink a LizardKicker.', 10, 'z'),
+    Task('Travel to Molch Island', 'z', 'Take one of the boats around Lake Molch to Molch Island', 10, 'z'),  # New!
     Task('Eat a Field Ration', 'z', 'Eat a Field Ration', 10, 'z'),  # New!
     Task('Complete the Shayzien Basic Agility Course', 'z', 'Complete a lap of the Shayzien Basic Agility Course', 30, 'z'),  # New!
     Notice('Buy chefs hat in Shayzien'),
+
+    Header('Hosidius Area'),
+    Task('Plant Seeds in an Allotment Patch', '', 'Plant some seeds in an Allotment patch', 10, 'a | m | k | z | t | v'),
+    Task('Fill a Bucket With Supercompost', '', 'Fill a Bucket with Supercompost from a Compost Bin', 30, 'a | m | k | z | t | v'),
+    Task('Dig 25 Saltpetre', 'z', 'Dig 25 Saltpetre', 30, 'z'),  # New!
+    Task('Restore 14 Prayer points in Hosidius', 'z', 'Restore exactly 14 Prayer Points when praying at an Altar in Hosidius', 30, 'z'),  # New!
+
+    Header('Arceuus Area'),
     Task('Use the Mine cart transportation System', 'z', 'Use the Mine cart transportation System', 10, 'z'),  # New!
-    Task('Bank at Lands End', 'z', 'Open your Bank using the Bank at Lands End', 10, 'z'),  # New!
-    Task('Equip a Protest Banner', 'z', 'Equip a Protest Banner.', 10, 'z'),
-    Task('Steal 1 Artefact', 'z', 'Steal an artefact for Captain Khaled in Piscarilius.', 10, 'z'),
-    Task('Make an Attack Potion', '', 'Make an Attack Potion', 10),
     Task('Turn in 1 Library Book', 'z', 'Find and turn in a book in the Arceuus Library.', 10, 'z'),
     Task('Turn in 10 Library Books', 'z', 'Find and turn in 25 books in the Arceuus Library.', 30, 'z'),
+    Task('Cast a Wave Spell', '', 'Cast any wave spell', 80),
+    Notice('Buy eye of newt in Arceuus'),
+    Task('Make an Attack Potion', '', 'Make an Attack Potion', 10),
     Task('1 Wintertodt Kill', 'z', 'Help the Pyromancers subdue the Wintertodt', 10, 'z'),
-    Task('Talk to the Voice of Yama', 'z', 'Talk to the Voice of Yama', 30, 'z'),  # New!
+
+    Header('Kebos'),
+    Notice('Hope you were raking, make compost if you are not 20 farming'),
+    Task('Complete the Garden of Death', 'z', 'Complete the Garden of Death', 30, 'z'),  # New!
+    Task('Complete 1 Farming Contract', 'z', 'Complete a Farming Contract for Guildmaster Jane in the Farming Guild', 10, 'z'),
     Task('Bank at Mount Quidamortem', 'z', 'Open your Bank using the Bank at Mount Quidamortem', 10, 'z'),  # New!
-    Task('Complete Getting Ahead', 'z', 'Complete  Getting Ahead  quest.', 30, 'z'),  # 26 Construction but you should have it from setting up BH runs
+
+    Header('Kourend Castle'),
     Task('Cast Kourend Castle Teleport', 'z', 'Cast the spell Kourend Castle Teleport after unlocking it by reading transportation incantations', 30, 'z'),
+    Task('Steal Some Silk', '', 'Steal some silk from a silk stall', 10, 'k | z | t | v'),
+    Task('Equip a Protest Banner', 'z', 'Equip a Protest Banner.', 10, 'z'),
     Task('Smith Steel in Kourend Castle', 'z', 'Smith Steel in Kourend Castle', 30, 'z'),  # New!
     Task('Inferior Demonbane Demon Kill', 'z', 'Kill a demon using the Inferior Demonbane spell.', 30, 'z'),
     Notice('If you\'re in catacombs now consider safespotting Fire Giants for Combat Mastery (100% weakness to water spells)'),
     Notice('From entrance, run south then west through the other giants, safespot on the ramp to them'),
-    Task('Capture 10 sandworms', 'z', 'Capture 10 sandworms', 30, 'z'),  # New!
-    Task('Enter the Cooks Guild', 's', 'Enter the Cooks Guild west of Varrock', 30, 's'),  # Buy chefs hat in Shayzien
+    Task('Kill a King Sand Crab', 'z', 'Kill a King Sand Crab', 30, 'z'),  # New!
     Task('Kourend and Kebos Easy Diary Tasks', 'z', 'Complete all tasks in the easy tier of the   Kourend and Kebos achievement diary', 30, 'z'),
     Task('Cast a Blast Spell', '', 'Cast any blast spell', 30),
     Task('Cast High Level Alchemy', '', 'Cast the High Level Alchemy spell', 30),
@@ -504,6 +527,7 @@ routed_tasks = [
     Task('Enter the Tai Bwo Wannai Hardwood Grove', 's', 'Enter the Hardwood Grove in Tai Bwo Wannai', 30, 's'),
     Task('Create an Antipoison', '', 'Create an Antipoison', 10),
     Task('Dismantle 20 Filled Bird Houses', 's', 'Dismantle 20 filled Bird Houses on Fossil Island', 30, 's'),
+    Task('Enter the Cooks Guild', 's', 'Enter the Cooks Guild west of Varrock', 30, 's'),  # Buy chefs hat in Shayzien
 
     Header('End of branching paths, final bit expects you to be 12x at T5'),
 
@@ -531,27 +555,8 @@ routed_tasks = [
     Notice('Try on the chickens in Rellekka because Misthalin ones are probably crowded'),
     Task('Kill three chickens in 6 seconds', '', 'Kill three chickens in 6 seconds', 30),
     Header('Okay, time to PVM!'),
-]
 
-tasks_only = [task for task in routed_tasks if isinstance(task, Task)]
-points_so_far = sum(task.points for task in tasks_only)
-print(f'Tasks: {len(tasks_only)}, Points: {points_so_far}')
-
-wont_route = [
-    Task('Craft a Leather Body', '', 'Craft a Leather Body', 10, 'a | k | z | d | m | f'),
-    Task('Clean 15 Grimy Tarromin', '', 'Clean 15 Grimy Tarromin', 10),  # New!
-    Task('Clean 25 Grimy Guam Leafs', '', 'Clean 25 Grimy Guam Leafs', 10),  # New!
-    Task('Create a Compost Potion', '', 'Create a Compost Potion', 10),
-    Task('Equip a Studded Body and Chaps', '', 'Equip a Studded Body along with some Studded Chaps', 10),  # 20 ranged/def
-    Task('Equip an Elemental Battlestaff or Mystic Staff', '', 'Equip either an elemental battlestaff or an elemental mystic staff', 30),
-    Task('1 Elite Clue Scroll', '', 'Open a Reward casket for completing an elite clue scroll', 30),
-    Task('1 Hard Clue Scroll', '', 'Open a Reward casket for completing a hard clue scroll', 30),
-    Task('15 Collection log slots', '', 'Obtain 15 unique Collection Log slots', 30),
-    Task('Make 20 Stamina Potions', '', 'Make 20 Stamina Potions', 30),
-    Task('Make a 4 dose potion', '', 'Make any 4 dose potion using an Amulet of Chemistry', 30),
-    Task('Clean 50 Grimy Cadantine', '', 'Clean 50 Grimy Cadantine', 30),  # New!
-    Task('Clean 50 Grimy Ranarr Weed', '', 'Clean 50 Grimy Ranarr Weed', 30),  # New!
-    Task('Clean a Grimy Avantoe', '', 'Clean a Grimy Avantoe', 30),
+    Header('Clues'),
     Task('Fill 5 Beginner Clue Collection Log Slots', '', 'Fill 5 slots in the Beginner Clue section of the Collection Log', 30),
     Task('Fill 5 Easy Clue Collection Log Slots', '', 'Fill 5 slots in the Easy Clue section of the Collection Log', 30),
     Task('Fill 5 Medium Clue Collection Log Slots', '', 'Fill 5 slots in the Medium Clue section of the Collection Log', 30),
@@ -560,122 +565,34 @@ wont_route = [
     Task('Gain a Unique Item From a Hard Clue', '', 'Gain a unique item from a Hard Clue Scroll Reward Casket', 30),
     Task('Gain a Unique Item From a Master Clue', '', 'Gain a unique item from a Master Clue Scroll Reward Casket', 30),
     Task('Gain a Unique Item From a Medium Clue', '', 'Gain a unique item from a Medium Clue Scroll Reward Casket', 30),
-    Task('Reach Base Level 20', '', 'Reach level 20 in every skill', 30),
-    Task('Reach Base Level 30', '', 'Reach level 30 in every skill', 30),
-    Task('Read a prayer book near a lectern', '', 'Read a Prayer book near a lectern', 30, 'm | f'),
-    Task('Equip a Yew Shortbow', '', 'Equip a Yew Shortbow', 30),
-    Task('Catch a Grey Chinchompa', '', 'Catch a Grey Chinchompa', 30),  # New!
-    Task('Check a grown Fruit Tree', '', 'Check the health of any Fruit Tree youve grown', 30),
-    Task('Chop Some Logs With a Rune Axe', '', 'Chop any kind of logs using a Rune Axe', 30),
-    Task('Equip a Maple Shortbow', '', 'Equip a Maple Shortbow', 30),
-    Task('Trade a herb with Jekyll', '', 'Trade a herb with Jekyll for a potion', 30),  # New!
-    Task('Drink a Strength Potion', '', 'Drink a Strength Potion', 10),
-    Task('Equip a Rune Weapon', '', 'Equip any Rune weapon', 30),
-    Task('Defeat a Steel Dragon on Karamja', 's', 'Defeat a Steel Dragon on Karamja', 30, 's'),
-    Task('Enter the Tai Bwo Wannai Hardwood Grove', 's', 'Enter the Hardwood Grove in Tai Bwo Wannai', 30, 's'),
-    Task('Equip a Toktz-Ket-Xil', 's', 'Equip a Toktz-Ket-Xil', 30, 's'),
-    Task('Equip a Toktz-Xil-Ak', 's', 'Equip a Toktz-Xil-Ak', 30, 's'),
-    Task('Equip a Toktz-Xil-Ek', 's', 'Equip a Toktz-Xil-Ek', 30, 's'),
-    Task('Equip an Obsidian Cape', 's', 'Equip an Obsidian Cape', 30, 's'),
-    Task('Mine some Ore With a Rune Pickaxe', '', 'Mine any ore using a Rune Pickaxe', 30),
-    Task('Catch 50 Karambwan', 's', 'Catch 50 Karambwan on Karamja', 30, 's'),
+
+    # Header('Mory Tasks'),
+    # Notice('Tan something for diary'),
+    # Notice('Get a slayer task from Mazchna'),
+    # Task('Defeat a Werewolf in Morytania', 'm', 'Defeat a Werewolf in Morytania', 10, 'm'),
+    # Task('Complete the Canifis Agility Course', 'm', 'Complete a lap of the Canifis Rooftop Agility Course', 30, 'm'),
+    # Task('Worship the Ectofuntus', 'm', 'Worship the Ectofuntus', 30, 'm'),  # New!
+    # Task('Telegrab a Bloody bracer', 'm', 'Telegrab a Bloody bracer in Slepe', 30, 'm'),
+    # Task('Unlock permanent boat travel with Andras', 'm', 'Unlock permanent boat travel with Andras in Morytania', 80, 'm'),
+    # Task('Visit Port Phasmatys', 'm', 'Visit Port Phasmatys.', 10, 'm'),
+    # Task('Visit Mos LeHarmless', 'm', 'Visit Mos LeHarmless', 10, 'm'),
+    # Task('Visit Harmony Island', 'm', 'Visit Harmony Island', 10, 'm'),
+    #
+    # Header('Swampletics'),
+    # Task('Feed a ghast some sweets', 'm', 'Feed a ghast some sweets', 30, 'm'),
+    # Task('Craft a Snelm', 'm', 'Craft any Snelm', 10, 'm'),
+    # Notice('Cook the thin snail you get'),
+    # Task('Complete Haunted Mine', 'm', 'Complete the   Haunted Mine quest', 80, 'm'),
+    # Task('Equip a Salve Amulet (e)', 'm', 'Equip a Salve Amulet (e)', 30, 'm'),
+    #
+    # Header('Pvming'),
+    # Task('Assemble a Slayer Helm', 'm', 'Assemble a Slayer Helm', 30, 'm'),
+    # Notice('Defeat a banshee for Mory diary'),
 ]
 
-starter_tasks = [
-    Task('Obtain a Casket from Fishing', '', 'Obtain a Casket from Fishing', 10),
-    Task('Reach Combat Level 25', '', 'Reach Combat Level 25', 10),
-    Task('Successfully Cut a Red Topaz', '', 'Successfully Cut a Red Topaz', 10),
-    Task('Craft Any Combination Rune', '', 'Use a Runecrafting Altar to craft any type of combination rune', 30),
-    Task('Land a hoop on a stick', '', 'Successfully land a hoop on a stick in the PoH minigame', 30),  # New!
-    Task('Make a Pineapple Pizza', '', 'Make a Pineapple Pizza', 30),
-    Task('Reach a Prayer Bonus of 15', '', 'Equip enough item to reach a Prayer bonus of 15 or more', 30),
-    Task('Reach Combat Level 75', '', 'Reach Combat Level 75', 30),
-    Task('Scrape some blue dragonhide', '', 'Scrape some blue dragonhide', 30),
-    Task('Complete the Medium Karamja Diary', 's', 'Complete all of the medium tasks in the  Karamja Achievement Diary', 30, 's'),
-    Task('Catch 50 Implings in Puro-Puro', 's', 'Catch 50 Implings in Puro-Puro', 30, 's'),
-    Task('Chop a Sulliuscep Cap', 's', 'Chop a Sulliuscep Cap on Fossil Island', 30, 's'),
-    Task('Complete a Volcanic Mine Game', 's', 'Complete a Volcanic Mine game on Fossil Island', 30, 's'),
-    Task('Complete the Easy Varrock Diary', 's', 'Complete all of the easy tasks in the  Varrock Achievement Diary', 30, 's'),
-    Task('Complete the Medium Varrock Diary', 's', 'Complete all of the medium tasks in the  Varrock Achievement Diary', 30, 's'),
-    Task('Craft 50 Cosmic Runes', 's', 'Craft 50 Cosmic Runes from Essence at the Cosmic Altar from Essence', 30, 's'),
-    Task('Defeat Bryophyta', 's', 'Defeat Bryophyta in Varrock Sewers', 30, 's'),
-    Task('Defeat Obor', 's', 'Defeat Obor in Edgeville Dungeon', 30, 's'),
-    Task('Make a pie for Romily', 's', 'Make a pie for Romily, north west of Varrock', 30, 's'),  # New!
-]
-
-difficult_tasks = [
-    Task('25 Easy Clue Scrolls', '', 'Open 25 Reward caskets for completing easy clue scrolls', 30),
-    Task('25 Elite Clue Scrolls', '', 'Open 25 Reward caskets for completing elite clue scrolls', 30),
-    Task('25 Hard Clue Scrolls', '', 'Open 25 Reward caskets for completing hard clue scrolls', 30),
-    Task('25 Medium Clue Scrolls', '', 'Open 25 Reward caskets for completing medium clue scrolls', 30),
-    Task('25 Superior Slayer Encounters', '', 'Defeat 25 superior foes while on a Slayer Task', 30),
-    Task('30 Collection log slots', '', 'Obtain 30 unique Collection Log slots', 30),
-    Task('50 Collection log slots', '', 'Obtain 50 unique Collection Log slots', 30),
-    Task('75 Easy Clue Scrolls', '', 'Open 75 Reward caskets for completing easy clue scrolls', 30),
-    Task('75 Medium Clue Scrolls', '', 'Open 75 Reward caskets for completing medium clue scrolls', 30),
-    Task('75 Superior Slayer Encounters', '', 'Defeat 75 superior foes while on a Slayer Task', 30),
-    Task('Build a Mahogany Portal', '', 'Build a Mahogany Portal in a Portal Chamber in your Player Owned House', 30),
-    Task('Catch a Swamp Lizard or Salamander', '', 'Catch either a Swamp Lizard or any kind of Salamander', 30, 'm | d | k | w | v'),
-    Task('Complete 10 Mahogany homes contracts', '', 'Complete 10 Mahogany homes contracts', 30),
-    Task('Complete 25 Mahogany homes contracts', '', 'Complete 25 Mahogany homes contracts', 30),
-    Task('Complete a Mahogany homes adept contract', '', 'Complete a  Mahogany Homes adept contract', 30, ''),
-    Task('Complete a Mahogany homes novice contract', '', 'Complete a  Mahogany Homes novice contract', 30, ''),
-    Task('Complete the Easy Western Provinces Diary', '', 'Complete all of the easy tasks in the  Western Provinces Achievement Diary', 30, 'k'),
-    Task('Complete the Evil Bob random event', '', 'Complete the Evil Bob random event', 30),
-    Task('Complete the Maze random event', '', 'Complete the Maze random event', 30),
-    Task('Complete the Medium Western Provinces Diary', '', 'Complete all of the medium tasks in the  Western Provinces Achievement Diary', 30, 'k'),
-    Task('Complete the Pillory random event', '', 'Complete the Pillory random event', 30),
-    Task('Complete the Pinball random event', '', 'Complete the Pinball random event', 30),
-    Task('Complete the Postie Pete random event', '', 'Complete the Postie Pete random event', 30),
-    Task('Complete the Prison Pete random event', '', 'Complete the Prison Pete random event', 30),
-    Task('Complete the Surprise Exam random event', '', 'Complete the Surprise Exam random event', 30),
-    Task('Craft 4 Runes With 1 Essence', '', 'Use a Runecrafting Altar to craft 4 of any type of rune using a single essence', 30),
-    Task('Create a green dhide shield', '', 'Create a green dhide shield', 30),
-    Task('Create a Guthix Rest Tea', '', 'Create a Guthix Rest Tea', 30, 'f | d | k'),
-    Task('Defeat a Superior Slayer Creature', '', 'Defeat any Superior Slayer Creature', 30),
-    Task('Equip a frog mask', '', 'Equip a frog mask', 30),
-    Task('Equip a Full Adamant Set', '', 'Equip an Adamant Platebody, a Adamant Full Helm and either some Adamant Platelegs or an Adamant Plateskirt', 30),
-    Task('Equip a Full Blue Dragonhide Set', '', 'Equip a Blue Dragonhide Body, some Blue Dragonhide Chaps and some Blue Dragonhide Vambraces', 30),
-    Task('Equip a Full Green Dragonhide Set', '', 'Equip a Green Dragonhide Body, some Green Dragonhide Chaps and some Green Dragonhide Vambraces', 30),
-    Task('Equip a Full Red Dragonhide Set', '', 'Equip a Red Dragonhide Body, some Red Dragonhide Chaps and some Red Dragonhide Vambraces', 30),
-    Task('Equip a Granite Shield', '', 'Equip a Granite Shield', 30, 'k | a | f'),
-    Task('Equip a Lava Battlestaff', '', 'Equip a Lava Battlestaff', 30, 'k | a | w | m | d'),
-    Task('Equip a Leaf-Bladed Sword', '', 'Equip a Leaf-Bladed Sword', 30, 'f | t'),
-    Task('Equip a Piece of a Mystic Set', '', 'Equip any piece of any Mystic robe set', 30),
-    Task('Equip a piece of Beekeepers Outfit', '', 'Equip a piece of Beekeepers Outfit', 30),
-    Task('Equip a piece of Camouflage outfit', '', 'Equip a piece of Camouflage outfit', 30),
-    Task('Equip a piece of Mime Outfit', '', 'Equip a piece of Mime Outfit', 30),
-    Task('Equip a piece of Zombie Outfit', '', 'Equip a piece of Zombie Outfit', 30),
-    Task('Equip a Trimmed Amulet', '', 'Equip a Trimmed Amulet', 30),
-    Task('Equip full Graahk, Larupia or Kyatt', '', 'Equip a full set of Graahk, Larupia or Kyatt attire', 30),
-    Task('Fill 15 Hard Clue Collection Log Slots', '', 'Fill 15 slots in the Hard Clue section of the Collection Log', 30),
-    Task('Fill 20 Easy Clue Collection Log Slots', '', 'Fill 20 slots in the Easy Clue section of the Collection Log', 30),
-    Task('Fill 20 Medium Clue Collection Log Slots', '', 'Fill 20 slots in the Medium Clue section of the Collection Log', 30),
-    Task('Fill 3 Elite Clue Collection Log Slots', '', 'Fill 3 slots in the Elite Clue section of the Collection Log', 30),
-    Task('Fill 3 Hard Clue Collection Log Slots', '', 'Fill 3 slots in the Hard Clue section of the Collection Log', 30),
-    Task('Fill a Bucket With Supercompost', '', 'Fill a Bucket with Supercompost from a Compost Bin', 30, 'a | m | k | z | t | v'),
-    Task('Fill a Large Pouch', '', 'Fill a Large Pouch with Essence', 30),
-    Task('Fletch some Broad Arrows or Bolts', '', 'Fletch either some Broad Arrows or some Broad Bolts', 30),
-    Task('Gain 10 Unique Items From Beginner Clues', '', 'Gain 10 unique items from Beginner Clue Scroll Reward Caskets', 30),
-    Task('Gain 10 Unique Items From Easy Clues', '', 'Gain 10 unique items from Easy Clue Scroll Reward Caskets', 30),
-    Task('Gain 10 Unique Items From Medium Clues', '', 'Gain 10 unique items from Medium Clue Scroll Reward Caskets', 30),
-    Task('Gain 20 Unique Items From Hard Clues', '', 'Gain 20 unique items from Hard Clue Scroll Reward Caskets', 30),
-    Task('Gain 35 Unique Items From Easy Clues', '', 'Gain 35 unique items from Easy Clue Scroll Reward Caskets', 30),
-    Task('Gain 5 Unique Items From Hard Clues', '', 'Gain 5 unique items from Hard Clue Scroll Reward Caskets', 30),
-    Task('Harvest an Irit Leaf', '', 'Harvest an Irit Leaf from any Herb patch', 30, 'a | m | k | f | z | v'),
-    Task('Make 30 Prayer Potions', '', 'Make 30 Prayer Potions', 30),
-    Task('Mine 50 Mithril Ore', '', 'Mine 50 Mithril Ore', 30),
-    Task('Open the Mystery Box', '', 'A boat is a boat, but the mystery box could be anything, even a boat!', 30),
-    Task('Smith 150 Iron Arrowtips', '', 'Use an Anvil to smith 150 Iron Arrowtips', 30),
-    Task('Smith 250 Mithril bolts (unf)', '', 'Use an Anvil to smith 250 Mithril bolts (unf)', 30),
-    Task('Craft 50 Nature Runes', 's', 'Craft 50 Nature Runes from Essence at the Nature Altar', 30, 's'),
-    Task('Defeat 50 Tormented Demons', 's', 'Defeat 50 Tormented Demons', 30, 's'),
-    Task('Defeat a Fossil Island Wyvern', 's', 'Defeat any type of Wyvern on Fossil Island', 30, 's'),
-    Task('Defeat a Tormented Demon', 's', 'Defeat a Tormented Demon', 30, 's'),
-    Task('Equip the Forestry Basket', 's', 'Obtain and Equip the Forestry Basket', 30, 's'),
-    Task('Get a Gem from a Gorak', 's', 'Obtain a gem drop from a Gorak', 30, 's'),
-]
-
+tasks_only = [task for task in routed_tasks if isinstance(task, Task)]
+points_so_far = sum(task.points for task in tasks_only)
+print(f'Tasks: {len(tasks_only)}, Points: {points_so_far}')
 
 unassigned_task_names = [t.name for t in starter_tasks]
 routed_task_names = [t.name for t in tasks_only]
@@ -721,10 +638,10 @@ for task in routed_tasks:
             print(f"~~{current_points} PTS ACQUIRED - T3 MET~~")
         if not t4_points_reached and current_points >= t4_points_needed:
             t4_points_reached = True
-            print(f"~~{current_points} PTS ACQUIRED - T4 PROBABLY MET~~")
+            print(f"~~{current_points} PTS ACQUIRED - T4 MET~~")
         if not t5_points_reached and current_points >= t5_points_needed:
             t5_points_reached = True
-            print(f"~~{current_points} PTS ACQUIRED - T5 PROBABLY MET~~")
+            print(f"~~{current_points} PTS ACQUIRED - T5 MET~~")
         current_points += task.points
 
 
