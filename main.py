@@ -5,15 +5,16 @@ from classes import BossCollection
 from task_lists.task_list_tbr import tasks
 from task_lists.master_task_list import all_known_tasks
 from task_lists.echoes_starter import starter_tasks
+from task_lists.echoes import echoes
 import helper
 
 
 def compute():
-    print_combinations = True
+    print_combinations = False
     print_impossible = False
     print_completable = False
 
-    task_list = all_known_tasks  # TODO Change this
+    task_list = echoes  # TODO Change this
 
     combos = helper.get_region_combos()
 
@@ -51,8 +52,8 @@ def compute():
     for idx, item in enumerate(region_list):
         region = item[0]
         points = item[1]
-        # output = f"{region.__repr__().upper()[1:]} {points} {combo_bosses[region]}"
-        output = f"{region.__repr__().upper()[1:]} {combo_bosses[region]}"
+        output = f"{region.__repr__().upper()[1:]} {points} {combo_bosses[region]}"
+        # output = f"{region.__repr__().upper()[1:]} {combo_bosses[region]}"
         print(output)
 
         if print_combinations:
@@ -70,10 +71,10 @@ def compute():
             for task in completable_tasks[region]:
                 print(task.to_str())
 
-        if print_completable or print_impossible or print_combinations:
-            print("\n==================================================\n")
 
-
+# for task in echoes:
+#     if task.area in ['', 's']:
+#         print(task.to_str())
 
 
 

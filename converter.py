@@ -4,6 +4,7 @@ from wiki_dumps.trailblazer_2020_data import leagues_2 as leagues_2
 from wiki_dumps.tbr_latest import leagues_4
 from wiki_dumps.tbr_earliest import leagues_4_initial
 from wiki_dumps.echoes_earliest import echoes_initial
+from wiki_dumps.raging_echoes import echoes_tasks
 
 """
 rows = document.querySelectorAll('table.wikitable.lighttable > tbody > tr')
@@ -47,19 +48,19 @@ def parse_region(text: str, base: bool):
 
 def generate():
     # UPDATE THESE LINES
-    task_source = echoes_initial
+    task_source = echoes_tasks
     # Set True if creating a list of possible tasks,
     # False if creating the actual/final Leagues 5 list
     only_create_missing_tasks = False
     tasks = []
     for task_data in task_source:
-        region = parse_region(task_data[0], base=True)
+        region = parse_region(task_data[0].replace('\n', ''), base=True)
         points = int(task_data[4].strip())
-        other_regions = parse_region(task_data[3], base=False)
+        other_regions = parse_region(task_data[3].replace('\n', ''), base=False)
         tasks.append(Task(
-            name=task_data[1].replace("'", "").replace(" ", ""),
+            name=task_data[1].replace("'", "").replace(" ", "").replace('\n', ''),
             area=region,
-            description=task_data[2].replace("'", "").replace(" ", ""),
+            description=task_data[2].replace("'", "").replace(" ", "").replace('\n', ''),
             points=points,
             regions=region if region or not other_regions else '**fixme**'
         ))
@@ -68,7 +69,8 @@ def generate():
 
     # used if we want to update the master list with new tasks we learn about, without duplicating
     if only_create_missing_tasks:
-        for task in missing_tasks:
+        global_tasks = [t for t in missing_tasks if t.area in ['', 's']]
+        for task in global_tasks:
             print(f'{task},')
     else:
         for task, is_new_status in zip(tasks, is_new):

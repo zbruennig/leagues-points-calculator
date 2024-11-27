@@ -21,7 +21,6 @@ def get_region_combos() -> List[Regions]:
         'f',
         'd'
     ]
-        # 'z', 'd', 'm']
     length = len(regions)
     for i in range(0, length):
         for j in range(i+1, length):
@@ -31,10 +30,10 @@ def get_region_combos() -> List[Regions]:
                     regions[j]: True,
                     regions[k]: True
                 }))
-    # return combinations
+    return combinations
     # return [Regions(f=True, z=True, m=True, w=True, k=True)]
     # return [Regions(f=True, m=True, w=True)]
-    return [Regions(True, True, True, True, True, True, True, True, True, True)]
+    # return [Regions(True, True, True, True, True, True, True, True, True, True)]
 
 
 def update_with_known_tasks(task_list: List[Task], return_unknown_only: bool = False) -> (List[Task], List[bool]):
