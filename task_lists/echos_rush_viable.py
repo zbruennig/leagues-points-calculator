@@ -182,10 +182,12 @@ routed_tasks = [
 
     Header('Frem should be unlocked now - Leagues tele there. Bring 3-4 food, bronze pick, steel pick. - claim seal of passage'),
     Notice('Grab 2-3 onions from field in SE Rellekka'),
+    Task('Steal a Cow bell in Rellekka', 'f', 'Steal a Cow bell in Rellekka', 30, 'f'),  # New!
     Task('Eat an Onion', 's', 'Eat an Onion, raw', 10, 's'),  # New!
     Notice('Fill inv with clay from Relekka mining spot, switch to steel pick from HAM once 6 (can\'t equip yet)'),
     Notice('Drop the bronze pick once you reach level 6'),
     Task('Mine some Ore With a Steel Pickaxe', '', 'Mine any ore using a Steel Pickaxe', 10),
+    Task('Pick up Snapegrass', 'f', 'Pick up Snapegrass from Lunar Isle', 10, 'f'),  # New!
     Header('Lunar Isle'),
     Task('Switch to the Lunar Spellbook', 'f', 'Switch to the Lunar Spellbook.', 10, 'f'),
     Notice('Switch back after'),
@@ -270,17 +272,29 @@ routed_tasks = [
     Notice('You probably have enough clay to make the highest level item always, but if you are short cups are most xp per clay but annoying.'),
 
     Header('Leagues Tele to Rellekka, thieve fremmys if not 50 -> Keldagrim'),
+    Notice('Bring some empty buckets'),
+    Task('Fill up 20 buckets of sand in Rellekka', 'f', 'Fill up 20 buckets of sand in Rellekka', 30, 'f'),  # New!
+    Task('Steal a Fish', 'f', 'Steal some fish from a Fish stall', 30, 'f'),  # New!
+    Task('Loot a Lyre', 'f', 'Kill someone and obtain their Lyre', 30, 'f'),  # New!
+    Task('Defeat a Troll in the Fremennik Province', 'f', 'Defeat a Troll in the Fremennik Province', 30, 'f'),
     Notice('Enter Blast Furnace to unlock minigame tele'),
     Task('Steal a Chocolate Slice', '', 'Steal a Chocolate Slice from a Bakery Stall.', 10, 'f | k | z | v'),
+    Task('Steal a Wooden Stock', 'f', 'Steal a Wooden Stock from a Crossbow Stall', 30, 'f'),  # New!
+    Task('Steal a Chisel', 'f', 'Steal a Chisel from a crafting stall in Keldagrim', 30, 'f'),  # New!
     Task('Achieve Your First Level 60', '', 'Reach level 60 in any skill.', 80),
     Task('Achieve Your First Level 70', '', 'Reach level 70 in any skill.', 80),
     Task('Cut a Sapphire', '', 'Cut a Sapphire', 10),
+    Task('Steal From a Gem Stall', '', 'Steal from a Gem Stall', 80),
     Task('Achieve Your First Level 80', '', 'Reach level 80 in any skill.', 80),
     Notice('Keep one of each mould from the crafting stall'),
     Notice('Silver Stall to 75'),
     Notice('Gem Stall to 80, we stop here to finish off 99 at 12x.'),
     Notice('Cut and drop gems here, keep a couple of each for tasks'),
     Notice('The main reason we want 75 now is the longer we wait on thieving the higher chance a non Dodgy Dealer can grief you.'),
+
+    Header('Lighthouse'),
+    Task('Equip a Damaged God book', 'f', 'Equip a Damaged God book', 30, 'f'),  # New!
+    Task('Defeat a Dagannoth in the Fremennik Province', 'f', 'Defeat a Dagannoth in the Fremennik Province', 30, 'f'),
 
     Header('Draynor 2'),
     Notice('Compass to W (Miss Schism), this is your best keybound banking tele'),
@@ -373,6 +387,7 @@ routed_tasks = [
     Task('Chop 100 Willow Logs', '', 'Chop 100 Willow Logs from Willow Trees', 30),
     Task('Fletch a Willow Shortbow (u)', '', 'Fletch a Willow Shortbow (u)', 30),  # New!
     Task('Equip a Willow Shield', '', 'Equip a Willow Shield', 30),
+    Task('Cut the Swaying Tree', 'f', 'Cut the Swaying Tree', 10, 'f'),  # New!
     Task('Obtain a Bird Nest', '', 'Obtain a Bird Nest whilst cutting down trees', 10),
 
     Header('Isle of Souls'),
@@ -390,6 +405,7 @@ routed_tasks = [
     Header('Do your diaries'),
     Notice('Especially for Karamja, try to wait on collecting rewards til 12x'),
     Task('Complete the Easy Fremennik Diary', 'f', 'Complete all of the easy tasks in the  Fremennik Achievement Diary.', 40, 'f'),
+    Task('Deposit an Item Using Peer the Seer', 'f', 'Deposit an item into your Bank using Peer the Seer', 30, 'f'),
     Task('Complete the Easy Lumbridge & Draynor Diary', 's', 'Complete all of the easy tasks in the  Lumbridge & Draynor Achievement Diary', 30, 's'),
     Task('Complete the Easy Varrock Diary', 's', 'Complete all of the easy tasks in the  Varrock Achievement Diary', 30, 's'),
     Task('Complete the Easy Karamja Diary', 's', 'Complete all of the easy tasks in the  Karamja Achievement Diary', 30, 's'),
@@ -408,6 +424,7 @@ routed_tasks = [
 
     Header('Start PVM a bit'),
     Task('Complete 1 Slayer Task', '', 'Complete 1 Slayer Task', 30),
+    Task('Kill a Rooster', 'f', 'Kill a Rooster in the Fremennik Province', 10, 'f'),  # New!
     Notice('Keep some bones from slayer monsters for Demon Slayer, we will train prayer later'),
     Task('Complete Demon Slayer', 's', 'Complete the  Demon Slayer  quest', 30, 's'),
     Task('Defeat a Greater Demon on Karamja', 's', 'Defeat a Greater Demon on Karamja', 30, 's'),
@@ -424,20 +441,30 @@ routed_tasks = [
     Task('Kill a Necromancer', '', 'Kill a Necromancer', 10, 'k | z'),
     Task('Steal Some Silk', '', 'Steal some silk from a silk stall', 10, 'k | z | t | v'),
     Task('Plant Seeds in an Allotment Patch', '', 'Plant some seeds in an Allotment patch', 10, 'a | m | k | z | t | v'),
+    Task('Restore 14 Prayer points in Hosidius', 'z', 'Restore exactly 14 Prayer Points when praying at an Altar in Hosidius', 30, 'z'),  # New!
     Task('Drink a LizardKicker', 'z', 'Drink a LizardKicker.', 10, 'z'),
+    Task('Eat a Field Ration', 'z', 'Eat a Field Ration', 10, 'z'),  # New!
+    Task('Complete the Shayzien Basic Agility Course', 'z', 'Complete a lap of the Shayzien Basic Agility Course', 30, 'z'),  # New!
     Notice('Buy chefs hat in Shayzien'),
+    Task('Use the Mine cart transportation System', 'z', 'Use the Mine cart transportation System', 10, 'z'),  # New!
+    Task('Bank at Lands End', 'z', 'Open your Bank using the Bank at Lands End', 10, 'z'),  # New!
     Task('Equip a Protest Banner', 'z', 'Equip a Protest Banner.', 10, 'z'),
     Task('Steal 1 Artefact', 'z', 'Steal an artefact for Captain Khaled in Piscarilius.', 10, 'z'),
     Task('Make an Attack Potion', '', 'Make an Attack Potion', 10),
     Task('Turn in 1 Library Book', 'z', 'Find and turn in a book in the Arceuus Library.', 10, 'z'),
-    Task('Turn in 25 Library Books', 'z', 'Find and turn in 25 books in the Arceuus Library.', 30, 'z'),
-    Task('Turn in 50 Library Books', 'z', 'Find and turn in 50 books in the Arceuus Library.', 30, 'z'),
-    Task('Headbang with KetSal Kuk', 'z', 'Headbang with KetSal Kuk.', 30, 'z'),
+    Task('Turn in 10 Library Books', 'z', 'Find and turn in 25 books in the Arceuus Library.', 30, 'z'),
+    Task('1 Wintertodt Kill', 'z', 'Help the Pyromancers subdue the Wintertodt', 10, 'z'),
+    Task('Talk to the Voice of Yama', 'z', 'Talk to the Voice of Yama', 30, 'z'),  # New!
+    Task('Bank at Mount Quidamortem', 'z', 'Open your Bank using the Bank at Mount Quidamortem', 10, 'z'),  # New!
     Task('Complete Getting Ahead', 'z', 'Complete  Getting Ahead  quest.', 30, 'z'),  # 26 Construction but you should have it from setting up BH runs
+    Task('Cast Kourend Castle Teleport', 'z', 'Cast the spell Kourend Castle Teleport after unlocking it by reading transportation incantations', 30, 'z'),
+    Task('Smith Steel in Kourend Castle', 'z', 'Smith Steel in Kourend Castle', 30, 'z'),  # New!
     Task('Inferior Demonbane Demon Kill', 'z', 'Kill a demon using the Inferior Demonbane spell.', 30, 'z'),
     Notice('If you\'re in catacombs now consider safespotting Fire Giants for Combat Mastery (100% weakness to water spells)'),
     Notice('From entrance, run south then west through the other giants, safespot on the ramp to them'),
+    Task('Capture 10 sandworms', 'z', 'Capture 10 sandworms', 30, 'z'),  # New!
     Task('Enter the Cooks Guild', 's', 'Enter the Cooks Guild west of Varrock', 30, 's'),  # Buy chefs hat in Shayzien
+    Task('Kourend and Kebos Easy Diary Tasks', 'z', 'Complete all tasks in the easy tier of the   Kourend and Kebos achievement diary', 30, 'z'),
     Task('Cast a Blast Spell', '', 'Cast any blast spell', 30),
     Task('Cast High Level Alchemy', '', 'Cast the High Level Alchemy spell', 30),
     Notice('Telegrab gold bar in varrock bank if needed'),
@@ -665,7 +692,7 @@ for name in tasks_only:
 current_points = 0
 
 r1_tasks_needed = 90
-r2_tasks_needed = 180
+r2_tasks_needed = 200
 t2_points_needed = 750
 t3_points_needed = 1500
 t4_points_needed = 2500
