@@ -99,3 +99,10 @@ bosses = [
     # Assuming these are all available somehow
     Boss("Tormented Demons", "", 5, 21)  # New
 ]
+
+from classes import Regions
+
+my_regions = Regions(z=True, f=True, m=True)
+my_bosses = [boss for boss in bosses if boss.needed_regions.is_satisfied_by(my_regions)]
+for boss in my_bosses:
+    print(boss)

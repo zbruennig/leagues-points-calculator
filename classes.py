@@ -100,6 +100,9 @@ class Boss:
     def is_possible_with(self, chosen_regions: Regions):
         return self.needed_regions.is_satisfied_by(chosen_regions)
 
+    def __repr__(self):
+        return f'{self.name}: {self.points} available across {self.tasks} tasks'
+
 
 class BossCollection:
     def __init__(self):

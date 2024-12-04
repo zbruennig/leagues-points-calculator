@@ -594,10 +594,10 @@ tasks_only = [task for task in routed_tasks if isinstance(task, Task)]
 points_so_far = sum(task.points for task in tasks_only)
 print(f'Tasks: {len(tasks_only)}, Points: {points_so_far}')
 
-unassigned_task_names = [t.name for t in starter_tasks]
-routed_task_names = [t.name for t in tasks_only]
-wont_route_task_names = [t.name for t in wont_route]
-difficult_tasks_names = [t.name for t in difficult_tasks]
+# unassigned_task_names = [t.name for t in starter_tasks]
+# routed_task_names = [t.name for t in tasks_only]
+# wont_route_task_names = [t.name for t in wont_route]
+# difficult_tasks_names = [t.name for t in difficult_tasks]
 # print([t for t in unassigned_task_names if t in routed_task_names])
 
 task_map = {}
@@ -645,13 +645,13 @@ for task in routed_tasks:
         current_points += task.points
 
 
-from task_lists.echoes_starter import starter_tasks
-all_echoes_tasks = [t.name for t in starter_tasks]
-missing_tasks = [t for t in all_echoes_tasks if (
-        t not in unassigned_task_names
-        and t not in routed_task_names
-        and t not in wont_route_task_names
-        and t not in difficult_tasks_names
-)]
-tasks_to_add = [t for t in starter_tasks if t.name in missing_tasks]
+# from task_lists.echoes_starter import starter_tasks
+# all_echoes_tasks = [t.name for t in starter_tasks]
+# missing_tasks = [t for t in all_echoes_tasks if (
+#         t not in unassigned_task_names
+#         and t not in routed_task_names
+#         and t not in wont_route_task_names
+#         and t not in difficult_tasks_names
+# )]
+# tasks_to_add = [t for t in starter_tasks if t.name in missing_tasks]
 # print(tasks_to_add)
